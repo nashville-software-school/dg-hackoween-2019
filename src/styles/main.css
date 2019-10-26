@@ -1,0 +1,47 @@
+#background {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.dgliteracy.org/wp-content/uploads/2018/04/home_module_numbers_bg-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.35;
+    z-index: -1;
+  }
+
+.global-footer-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #253e59;
+    color: white;
+    text-align: center;
+    height: 10%;
+    
+    
+}
+.global-footer-nav div {
+    display: flex;
+    /* justify-content: center;
+    align-self: center; */
+
+}
+
+.nss-logo {
+    width: 45%;
+}
+
+.hackoween {
+    width: 45%;
+}
+.dg-logo {
+    width: 45%;
+}
+
+.dg-literacy-logo {
+    width: 15%;
+}

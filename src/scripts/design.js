@@ -11,8 +11,8 @@ const buildAndAppendbackgroundImage = () => {
 const buildAndAppendheader = () => {
     const navBarHeader = `
     <header class="global-header">
-        <a href="https://www.dgliteracy.org/" title="Dollar General Literacy Foundation" rel="home" class="logo">
-            <img src="https://www.dgliteracy.org/wp-content/themes/dg-literacy/assets/images/dg-literacy-logo_656w.png" alt="Dollar General Literacy Foundation">
+        <a href="https://www.dgliteracy.org/" title="Dollar General Literacy Foundation" rel="home">
+            <img class="dg-literacy-logo" src="https://www.dgliteracy.org/wp-content/themes/dg-literacy/assets/images/dg-literacy-logo_656w.png" alt="Dollar General Literacy Foundation">
         </a>
         </div>
     </header>
