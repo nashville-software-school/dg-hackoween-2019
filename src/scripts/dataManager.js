@@ -6,5 +6,4 @@ const getStates = () => {
     .then(response => response.json())
 }
 
-
 export default { getStates }

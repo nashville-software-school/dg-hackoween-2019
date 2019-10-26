@@ -1,6 +1,8 @@
 import data from './dataManager.js';
 
 
+const mapContainer = document.querySelector("#state-map")
+
 const stateDropdown = {
     dropdownContainer: document.querySelector("#state-dropdown"),
     createDropdown() {
@@ -12,15 +14,9 @@ const stateDropdown = {
             })
         })
     },
-    handleSubmitButton() {
-        /*
-        1. Whatever state is selected by user,
-        2. Get the correct state HTML file,
-        3. Create iFrame for the selected state's HTML file
-        */
-       const mapContainer = document.querySelector("#state-map"),
-             selectedState = event.target.value
-             console.log(selectedState)
+    handleSelection(event) {
+        const selectedState = event.target.value
+        mapContainer.innerHTML = `<iframe src="./maps/${selectedState}-map.html"></iframe>`
     }
 }
 
