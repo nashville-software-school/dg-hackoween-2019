@@ -1,5 +1,6 @@
 import data from './dataManager.js';
 
+
 const mapContainer = document.querySelector("#state-map")
 // mapContainer.addEventListener('click', () => {
 //     console.log("Good luck...")
