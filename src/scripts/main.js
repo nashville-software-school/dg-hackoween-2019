@@ -2,7 +2,7 @@ import design from "./design.js"
 import footer from "./footer.js"
 import stateDropdown from "./stateDropdown.js";
 import submitButton from "./button.js";
-import app-form from "./app-form.js";
+import appForm from "./appForm.js";
 
 // Comment later
 design.buildAndAppendbackgroundImage()
@@ -13,3 +13,5 @@ footer.buildAndAppendFooter()
 
 // comment later
 stateDropdown.createDropdown();
+
+appForm.buildAndAppendAppForm();
