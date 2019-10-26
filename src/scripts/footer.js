@@ -15,7 +15,7 @@ export default {
             </div>
     </nav>
     `
-        console.log(footer)
+        // console.log(footer)
 
         const footerContainerDiv = document.querySelector("#footer-container")
         footerContainerDiv.innerHTML = footer

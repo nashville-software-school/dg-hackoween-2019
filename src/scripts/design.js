@@ -4,7 +4,7 @@ export default {
         const backgroundImage = `
         <div id ="background"></div>
         `
-        console.log(backgroundImage)
+        // console.log(backgroundImage)
 
         const backgroundContainerDiv = document.querySelector("#background-container")
         backgroundContainerDiv.innerHTML = backgroundImage
@@ -19,7 +19,7 @@ export default {
             </div>
         </header>
         `
-        console.log("hello", navBarHeader)
+        // console.log("hello", navBarHeader)
 
         const headerContainer = document.querySelector("#header")
         headerContainer.innerHTML = navBarHeader
