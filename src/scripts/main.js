@@ -1,3 +1,7 @@
-buildAndAppendbackgroundImage()
+import design from "./design.js"
+import footer from "./footer.js"
 
-buildAndAppendheader()
+design.buildAndAppendbackgroundImage()
+design.buildAndAppendheader()
+
+footer.buildAndAppendFooter()

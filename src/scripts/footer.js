@@ -1,5 +1,6 @@
-const buildAndAppendFooter = () => {
-    const footer = `
+export default {
+    buildAndAppendFooter: () => {
+        const footer = `
     <nav class="global-footer-nav">
             <div>
                 <a class="nss-home" href="http://nashvillesoftwareschool.com/" target="_blank">
@@ -14,10 +15,9 @@ const buildAndAppendFooter = () => {
             </div>
     </nav>
     `
-    console.log(footer)
+        console.log(footer)
 
-    const footerContainerDiv = document.querySelector("#footer-container")
-    footerContainerDiv.innerHTML = footer
+        const footerContainerDiv = document.querySelector("#footer-container")
+        footerContainerDiv.innerHTML = footer
+    }
 }
-
-buildAndAppendFooter()
