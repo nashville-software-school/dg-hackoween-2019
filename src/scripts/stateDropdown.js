@@ -1,5 +1,9 @@
 import data from './dataManager.js';
 
+const mapContainer = document.querySelector("#state-map")
+// mapContainer.addEventListener('click', () => {
+//     console.log("Good luck...")
+// })
 
 const stateDropdown = {
     dropdownContainer: document.querySelector("#state-dropdown"),
@@ -12,16 +16,16 @@ const stateDropdown = {
             })
         })
     },
-    handleSubmitButton() {
+    handleSelection(event) {
         /*
         1. Whatever state is selected by user,
-        2. Get the correct state HTML file,
+        2. Get the correct state HTML file ${state}-map.html,
         3. Create iFrame for the selected state's HTML file
         */
-       const mapContainer = document.querySelector("#state-map"),
-             selectedState = event.target.value
-             console.log(selectedState)
-    }
+             const selectedState = event.target.value
+             mapContainer.innerHTML = `<iframe src="./maps/${selectedState}-map.html"></iframe>`
+    },
+
 }
 
 export default stateDropdown
