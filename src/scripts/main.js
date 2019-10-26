@@ -1,3 +1,4 @@
 import stateDropdown from "./stateDropdown.js";
+// import data from './dataManager.js';
 
-console.log(stateDropdown.dropdownContainer)
+stateDropdown.createDropdown();

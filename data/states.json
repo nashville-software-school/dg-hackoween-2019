@@ -45,10 +45,6 @@
             "abbreviation": "GA"
         },
         {
-            "name": "Guam",
-            "abbreviation": "GU"
-        },
-        {
             "name": "Hawaii",
             "abbreviation": "HI"
         },
@@ -145,10 +141,6 @@
             "abbreviation": "ND"
         },
         {
-            "name": "Northern Mariana Islands",
-            "abbreviation": "MP"
-        },
-        {
             "name": "Ohio",
             "abbreviation": "OH"
         },
@@ -161,16 +153,8 @@
             "abbreviation": "OR"
         },
         {
-            "name": "Palau",
-            "abbreviation": "PW"
-        },
-        {
             "name": "Pennsylvania",
             "abbreviation": "PA"
-        },
-        {
-            "name": "Puerto Rico",
-            "abbreviation": "PR"
         },
         {
             "name": "Rhode Island",
