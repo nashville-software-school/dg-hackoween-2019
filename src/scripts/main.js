@@ -14,8 +14,4 @@ stateDropdown.createDropdown();
 
 document.querySelector("#state-dropdown").addEventListener("change", stateDropdown.handleSelection)
 
-window.addEventListener("hashchange", event => event.preventDefault());
-
-document.querySelector("#state-map").addEventListener('click', () => {
-    console.log("Good luck...")
-})
+window.addEventListener("hashchange", event => console.log(location.hash));
