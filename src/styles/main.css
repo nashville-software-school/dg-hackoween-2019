@@ -42,7 +42,15 @@
     width: 45%;
 }
 
+.cg-logo {
+    width: 45%;
+    background-color: white;
+}
+
 .dg-literacy-logo {
     width: 15%;
-    
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }
