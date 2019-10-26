@@ -2,6 +2,7 @@ import design from "./design.js"
 import footer from "./footer.js"
 import stateDropdown from "./stateDropdown.js";
 import submitButton from "./button.js";
+import app-form from "./app-form.js";
 
 // Comment later
 design.buildAndAppendbackgroundImage()
