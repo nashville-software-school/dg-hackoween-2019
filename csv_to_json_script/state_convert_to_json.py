@@ -10,7 +10,8 @@ key_map = {
         "green": "green",
         "red": "red",
         "yellow": "yellow",
-        " Budget ": "budget"
+        " Budget ": "budget",
+        "Budget": "budget"
     }
 
 def main():
