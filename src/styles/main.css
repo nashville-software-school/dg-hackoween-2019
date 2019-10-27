@@ -42,7 +42,26 @@
     width: 45%;
 }
 
+.cg-logo {
+    width: 45%;
+    background-color: white;
+}
+
 .dg-literacy-logo {
-    width: 15%;
-    
+    width: 10%;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+}
+
+#state-map iframe {
+    width: 60%;
+    height: 450px;
+    margin: 50px;
+    border: solid;
+}
+
+#states {
+    margin-left: 50px;
 }
