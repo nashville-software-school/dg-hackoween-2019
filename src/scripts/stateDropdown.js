@@ -1,4 +1,6 @@
 import data from './dataManager.js';
+import stateResults from './stateResults.js';
+
 
 
 const mapContainer = document.querySelector("#state-map")
@@ -14,9 +16,16 @@ const stateDropdown = {
             })
         })
     },
+    getStateData(selectedState) {
+        data.getAggregatedData().then((stateResultsArray) => {
+            const stateData = stateResultsArray.find(state => state.state === selectedState)
+            stateResults.buildAndAppendStateResults(stateData);
+        })
+    },
     handleSelection(event) {
         const selectedState = event.target.value
         mapContainer.innerHTML = `<iframe src="./maps/${selectedState}-map.html"></iframe>`
+        stateDropdown.getStateData(selectedState)
     }
 }
 
