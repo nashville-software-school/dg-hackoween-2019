@@ -10,15 +10,16 @@
     background-size: cover;
     opacity: 0.35;
     z-index: -1;
-  }
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-
 }
 
 .global-footer-nav {
+    display: flex;
+    align-items: center;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -27,29 +28,33 @@ body {
     color: white;
     text-align: center;
     height: 10%;
-    
-    
 }
+
 .global-footer-nav div {
     display: flex;
+    align-items: center;
     /* justify-content: center;
     align-self: center; */
 
 }
 
 .nss-logo {
-    width: 45%;
+    width: 80%;
+}
+
+.nss-home {
+    width: 300px;
 }
 
 .hackoween {
     width: 45%;
 }
 .dg-logo {
-    width: 45%;
+    width: 70%;
 }
 
 .cg-logo {
-    width: 45%;
+    width: 80%;
     background-color: white;
 }
 
@@ -89,6 +94,10 @@ body {
     object-fit: cover;
 }
 
+#state-map {
+    
+}
+
 #states {
     margin-left: 5%;
     margin-top: 1%;
@@ -101,4 +110,23 @@ body {
 
 .field {
     margin: 2%;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.results {
+    background-color: aqua;
+    border-style: solid;
+}
+
+#stateResults {
+    border-style: solid;
+    width: 30%;
+}
+
+#ranking {
+    border-style: solid;
+    width: 30%;
 }

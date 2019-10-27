@@ -4,17 +4,15 @@ export default {
     <nav class="global-footer-nav">
             <div>
                 <a class="nss-home" href="http://nashvillesoftwareschool.com/" target="_blank">
-                    <img class="nss-logo" src="http://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg" alt="Nashville Software School Small Logo" class="logo">
+                    <img class="nss-logo" id="footerLogos" src="http://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg" alt="Nashville Software School Small Logo" class="logo">
                 </a>
                 <p class="hackoween"><strong>Nashville Software School Hackoween 2019</strong></p>
                 <a class="cg-home" href="https://impact.cybergrants.com/" target="_blank">
-                    <img class="cg-logo" src="https://impact.cybergrants.com/wp-content/uploads/2019/07/CG-logo-horizontal.svg" alt="cyber-grants">
+                    <img class="cg-logo" id="footerLogos" src="https://impact.cybergrants.com/wp-content/uploads/2019/07/CG-logo-horizontal.svg" alt="cyber-grants">
                 </a>
                 <a class="dg-home" href="https://www.dollargeneral.com" target="_blank">
-                    <img class="dg-logo" src="https://www.dgliteracy.org/wp-content/uploads/2018/03/dg-logo.svg" alt="Dollar General">
-                </a>
-
-                
+                    <img class="dg-logo" id="footerLogos" src="https://www.dgliteracy.org/wp-content/uploads/2018/03/dg-logo.svg" alt="Dollar General">
+                </a>      
             </div>
     </nav>
     `
