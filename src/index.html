@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title>DGLF Application Review</title>
 </head>
 
 <body>
     <header id="header"></header>
     <div id="background-container"></div>
-
+    <h1 id="title">Grant Application Lookup</h1>
     <div id="container">
+        <h3 id="state-header">Choose State:</h3>
         <div id="state-dropdown">
             <select id="states"><option disabled selected>Select State</option></select>
         </div>
-        <div id="state-map"></div>
+        <div id="state-map">
+            <img src="images/map_default_2.jpg" alt="map of united states" class="default-map">
+        </div>
     </div>
     <div id="app-form"></div>
 

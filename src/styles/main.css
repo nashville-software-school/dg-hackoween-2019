@@ -12,6 +12,11 @@
     z-index: -1;
   }
 
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .global-footer-nav {
     position: fixed;
     left: 0;
@@ -47,23 +52,44 @@
     background-color: white;
 }
 
+#header {
+    background-color: white;
+    height: 80px;
+}
+
 .dg-literacy-logo {
     width: 10%;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 25px;
 }
 
-#state-map iframe {
+#title {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#state-header {
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+#state-map iframe,
+.default-map {
     width: 60%;
     height: 450px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     border: solid;
+    object-fit: cover;
 }
 
 #states {
     margin-left: 50px;
+    margin-top: 10px;
 }
 
 #appForm {
