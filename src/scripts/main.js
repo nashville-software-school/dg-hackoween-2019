@@ -5,11 +5,11 @@ import appForm from "./appForm.js";
 import dataManager from "./dataManager.js";
 
 
-dataManager.getApplicationData().then((data) => {
+dataManager.getApplicationData().then((applicationsArray) => {
     window.addEventListener("hashchange", event => {
         const applicationId = parseInt(location.hash.split("#")[1])
-        const applicationsArray = data.applications
-        const selectedApplication = applicationsArray.find(application => application.id === applicationId)
+        const selectedApplication = applicationsArray.find(application => parseInt(application.id) === applicationId)
+        
         appForm.buildAndAppendAppForm(selectedApplication)
         
     });
@@ -17,7 +17,6 @@ dataManager.getApplicationData().then((data) => {
 
 design.buildAndAppendbackgroundImage()
 design.buildAndAppendheader()
-
 
 footer.buildAndAppendFooter()
 

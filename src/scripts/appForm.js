@@ -10,12 +10,28 @@ export default{
                     <p>${appObject.id}</p>
                 </div>
                 <div class="field">
+                    <h4>Color Ranking:</h4>
+                    <p>${appObject.color}</p>
+                </div>
+                <div class="field">
+                    <h4>Has National ID:</h4>
+                    <p>${appObject.has_national_id}</p>
+                </div>
+                <div class="field">
+                    <h4>Required Keywords:</h4>
+                    <p>${appObject.required_keyword}</p>
+                </div>
+                <div class="field">
                     <h4>Project Title:</h4>
                     <p>${appObject.title}</p>
                 </div>
                 <div class="field">
                     <h4>Complete Organization Address:</h4>
                     <p>${appObject.address}</p>
+                </div>
+                <div class="field">
+                    <h4>State:</h4>
+                    <p>${appObject.state}</p>
                 </div>
                 <div class="field">
                     <h4>ZIP Code: </h4>
