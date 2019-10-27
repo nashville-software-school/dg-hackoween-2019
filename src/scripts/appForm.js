@@ -71,42 +71,117 @@ export default{
             <h2>Application</h2>
             <section id="appFormSection">
                 <div class="field">
-                    <h4>Project Title: </h4>
+                    <h4>Project Title:</h4>
                     <p>text text</p>
                 </div>
                 <div class="field">
-                    <h4>Request ID: </h4>
+                    <h4>Request ID:</h4>
                     <p>text text</p>
                 </div>
                 <div class="field">
                     <h4>Complete Organization Address:</h4>
                     <p>text text</p>
                 </div>
-                <div class="field">ZIP Code: </div>
-                <div class="field">Grant/Request Amount: </div>
-                <div class="field">Number of individuals served by funding from this Adult Literacy application Total: </div>
-                <div class="field">Is this a new project?: </div>
-                <div class="field">What is your National Literacy Directory Program ID number?: </div>
-                <div class="field">Geographic Classification: </div>
-                <div class="field">What is the unemployment rate?: </div>
-                <div class="field">What is the drop-out rate?: </div>
-                <div class="field">What is the poverty level in the geographical area served?: </div>
-                <div class="field">What is the literacy rate in the geographical area served?: </div>
-                <div class="field">"If it is not the first year for this project, then how many individuals were served by this Adult Li": </div>
-                <div class="field">Statement of Impact: </div>
-                <div class="field">Project/Program Objective:</div>
-                <div class="field">Project/Program Design: </div>
-                <div class="field">Timeline: </div>
-                <div class="field">Assessment Methods: </div>
-                <div class="field">Project Facilities: </div>
-                <div class="field">Available Technology: </div>
-                <div class="field">Are you requesting technology with this grant application?: </div>
-                <div class="field">"If yes, how will it be used to advance the literacy program we would be funding?":</div>
-                <div class="field">Revenue - Sources of Funding Total: </div>
-                <div class="field">Budget Allocations Total: </div>
-                <div class="field">Budget Narrative: </div>
-                <div class="field">Latitude: </div>
-                <div class="field">Longitude: </div>
+                <div class="field">
+                    <h4>ZIP Code:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Grant/Request Amount:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Number of individuals served by funding from this Adult Literacy application Total:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Is this a new project?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is your National Literacy Directory Program ID number?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Geographic Classification:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the unemployment rate?:<h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the drop-out rate?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the poverty level in the geographical area served?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the literacy rate in the geographical area served?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>"If it is not the first year for this project, then how many individuals were served by this Adult Li":</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Statement of Impact:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Project/Program Objective:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Project/Program Design:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Timeline:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Assessment Methods:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Project Facilities:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Available Technology:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Are you requesting technology with this grant application?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>"If yes, how will it be used to advance the literacy program we would be funding?":</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Revenue - Sources of Funding Total:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Budget Allocations Total:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Budget Narrative:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Latitude:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Longitude:</h4>
+                    <p>text text</p>
+                </div>
             </section>
         </div>
         `

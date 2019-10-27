@@ -10,9 +10,16 @@
     background-size: cover;
     opacity: 0.35;
     z-index: -1;
-  }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
 
 .global-footer-nav {
+    display: flex;
+    align-items: center;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -21,47 +28,105 @@
     color: white;
     text-align: center;
     height: 10%;
-    
-    
 }
+
 .global-footer-nav div {
     display: flex;
+    align-items: center;
     /* justify-content: center;
     align-self: center; */
 
 }
 
 .nss-logo {
-    width: 45%;
+    width: 80%;
+}
+
+.nss-home {
+    width: 300px;
 }
 
 .hackoween {
     width: 45%;
 }
 .dg-logo {
-    width: 45%;
+    width: 70%;
 }
 
 .cg-logo {
-    width: 45%;
+    width: 80%;
     background-color: white;
+}
+
+#header {
+    background-color: white;
+    height: 80px;
+    margin: 0 auto;
 }
 
 .dg-literacy-logo {
     width: 10%;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 25px;
 }
 
-#state-map iframe {
+#title {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#state-header {
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+#state-map iframe,
+.default-map {
     width: 60%;
     height: 450px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     border: solid;
+    object-fit: cover;
+}
+
+#state-map {
+    
 }
 
 #states {
     margin-left: 50px;
+    margin-top: 10px;
+}
+
+#appForm {
+    margin-bottom: 10%;
+    margin-left: 50px;
+}
+
+.field {
+    margin: 2%;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.results {
+    background-color: aqua;
+    border-style: solid;
+}
+
+#stateResults {
+    border-style: solid;
+    width: 30%;
+}
+
+#ranking {
+    border-style: solid;
+    width: 30%;
 }
