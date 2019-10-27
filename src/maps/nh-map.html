@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_bd7af86d01d04e6cb201b7d7e95b207a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bd7af86d01d04e6cb201b7d7e95b207a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_bd7af86d01d04e6cb201b7d7e95b207a = L.map(
+                                  'map_bd7af86d01d04e6cb201b7d7e95b207a',
+                                  {center: [44.00123060000001,-71.57992309999999],
+                                  zoom: 7,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1b243223d6174c16a2829f43aa78e7fc = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+        
+    
+
+            var marker_754b3d15a0044c088e290c6a0ddeb39b = L.marker(
+                [43.1990098,-71.54578140000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+
+                var icon_d17d336cf6514d3681c139a8eeb6cff1 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_754b3d15a0044c088e290c6a0ddeb39b.setIcon(icon_d17d336cf6514d3681c139a8eeb6cff1);
+            
+    
+            var popup_fd181cd2209848ba8e5c28b3d8acefad = L.popup({maxWidth: '300'});
+
+            
+                var html_ea0ed5f1489e43499c736da2bf17423d = $('<div id="html_ea0ed5f1489e43499c736da2bf17423d" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52521417\'; void(0)"> View App </a></div>')[0];
+                popup_fd181cd2209848ba8e5c28b3d8acefad.setContent(html_ea0ed5f1489e43499c736da2bf17423d);
+            
+
+            marker_754b3d15a0044c088e290c6a0ddeb39b.bindPopup(popup_fd181cd2209848ba8e5c28b3d8acefad);
+
+            
+        
+    
+
+            var marker_1779c74798184035a3421140a35a446c = L.marker(
+                [42.9936423,-71.47799719999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+
+                var icon_70670e84673940b1aa9c97f83386fa06 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1779c74798184035a3421140a35a446c.setIcon(icon_70670e84673940b1aa9c97f83386fa06);
+            
+    
+            var popup_e3070741eee34060877f949ca56040d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_72e7b431213f4fce9bbb3a59b980f754 = $('<div id="html_72e7b431213f4fce9bbb3a59b980f754" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52305871\'; void(0)"> View App </a></div>')[0];
+                popup_e3070741eee34060877f949ca56040d7.setContent(html_72e7b431213f4fce9bbb3a59b980f754);
+            
+
+            marker_1779c74798184035a3421140a35a446c.bindPopup(popup_e3070741eee34060877f949ca56040d7);
+
+            
+        
+    
+
+            var marker_9f3e66612b6c4bce989124b9c1d0f087 = L.marker(
+                [43.7665663,-71.7146343],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+
+                var icon_0c6fa3f392bd41c1b808c5e8de641bb0 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9f3e66612b6c4bce989124b9c1d0f087.setIcon(icon_0c6fa3f392bd41c1b808c5e8de641bb0);
+            
+    
+            var popup_72ee24e333f44d77b708eca25a2cfa20 = L.popup({maxWidth: '300'});
+
+            
+                var html_c055fca58d2648cea746d7917b9dc291 = $('<div id="html_c055fca58d2648cea746d7917b9dc291" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#51625517\'; void(0)"> View App </a></div>')[0];
+                popup_72ee24e333f44d77b708eca25a2cfa20.setContent(html_c055fca58d2648cea746d7917b9dc291);
+            
+
+            marker_9f3e66612b6c4bce989124b9c1d0f087.bindPopup(popup_72ee24e333f44d77b708eca25a2cfa20);
+
+            
+        
+    
+            var circle_marker_baa86882671846ab89d428aabac33bde = L.circleMarker(
+                [43.44750689999999,-71.6219547],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_d5fb3b92848e4c20906bfc5f7fce66ae = L.popup({maxWidth: '300'});
+
+            
+                var html_83df38b7da5447d1813968d406c3b309 = $('<div id="html_83df38b7da5447d1813968d406c3b309" style="width: 100.0%; height: 100.0%;">Store Number: 13234</div>')[0];
+                popup_d5fb3b92848e4c20906bfc5f7fce66ae.setContent(html_83df38b7da5447d1813968d406c3b309);
+            
+
+            circle_marker_baa86882671846ab89d428aabac33bde.bindPopup(popup_d5fb3b92848e4c20906bfc5f7fce66ae);
+
+            
+        
+    
+            var circle_marker_010c42dbb5314db5aaa17be628192508 = L.circleMarker(
+                [43.111213299999996,-71.9087334],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_82781e797b9f435895d3401f18547b04 = L.popup({maxWidth: '300'});
+
+            
+                var html_2feef6a4e0264410abd09acc3b16de77 = $('<div id="html_2feef6a4e0264410abd09acc3b16de77" style="width: 100.0%; height: 100.0%;">Store Number: 13284</div>')[0];
+                popup_82781e797b9f435895d3401f18547b04.setContent(html_2feef6a4e0264410abd09acc3b16de77);
+            
+
+            circle_marker_010c42dbb5314db5aaa17be628192508.bindPopup(popup_82781e797b9f435895d3401f18547b04);
+
+            
+        
+    
+            var circle_marker_c839d0e24f774697978b02942660ea21 = L.circleMarker(
+                [42.75904110000001,-71.45490649999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_966a29d70b1e4445999532dcc13cb1b8 = L.popup({maxWidth: '300'});
+
+            
+                var html_2c40ad50a638481791d5ce2292120b7f = $('<div id="html_2c40ad50a638481791d5ce2292120b7f" style="width: 100.0%; height: 100.0%;">Store Number: 13313</div>')[0];
+                popup_966a29d70b1e4445999532dcc13cb1b8.setContent(html_2c40ad50a638481791d5ce2292120b7f);
+            
+
+            circle_marker_c839d0e24f774697978b02942660ea21.bindPopup(popup_966a29d70b1e4445999532dcc13cb1b8);
+
+            
+        
+    
+            var circle_marker_9b449f10c17d46c4a98a064a014896af = L.circleMarker(
+                [42.86527239999999,-72.33447819999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_8b8604da5fe440ec8cc6f0326bcf62c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_95855edb767f49a18fa9a999c0873816 = $('<div id="html_95855edb767f49a18fa9a999c0873816" style="width: 100.0%; height: 100.0%;">Store Number: 13534</div>')[0];
+                popup_8b8604da5fe440ec8cc6f0326bcf62c9.setContent(html_95855edb767f49a18fa9a999c0873816);
+            
+
+            circle_marker_9b449f10c17d46c4a98a064a014896af.bindPopup(popup_8b8604da5fe440ec8cc6f0326bcf62c9);
+
+            
+        
+    
+            var circle_marker_8204d59be7c44416a8f1db94869076bf = L.circleMarker(
+                [44.3807219,-71.6067632],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_5867442652d7473382f07c698d9813a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a6ffda245304524b0a372dec73febed = $('<div id="html_8a6ffda245304524b0a372dec73febed" style="width: 100.0%; height: 100.0%;">Store Number: 13570</div>')[0];
+                popup_5867442652d7473382f07c698d9813a2.setContent(html_8a6ffda245304524b0a372dec73febed);
+            
+
+            circle_marker_8204d59be7c44416a8f1db94869076bf.bindPopup(popup_5867442652d7473382f07c698d9813a2);
+
+            
+        
+    
+            var circle_marker_979d91a39cef485b9ec9de586a2d49fc = L.circleMarker(
+                [42.8181756,-72.01490150000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_03cbff5f4bfb4521ba8843e418349329 = L.popup({maxWidth: '300'});
+
+            
+                var html_d9c844d3870c4711ad399a6da5e20dcf = $('<div id="html_d9c844d3870c4711ad399a6da5e20dcf" style="width: 100.0%; height: 100.0%;">Store Number: 13698</div>')[0];
+                popup_03cbff5f4bfb4521ba8843e418349329.setContent(html_d9c844d3870c4711ad399a6da5e20dcf);
+            
+
+            circle_marker_979d91a39cef485b9ec9de586a2d49fc.bindPopup(popup_03cbff5f4bfb4521ba8843e418349329);
+
+            
+        
+    
+            var circle_marker_eff26e410bd64514a5c74051b5772bb1 = L.circleMarker(
+                [43.3601031,-72.1747015],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_b03af20a1022447c85291a93db7e6a99 = L.popup({maxWidth: '300'});
+
+            
+                var html_4d15c6f262204392b8ac11741987859a = $('<div id="html_4d15c6f262204392b8ac11741987859a" style="width: 100.0%; height: 100.0%;">Store Number: 13857</div>')[0];
+                popup_b03af20a1022447c85291a93db7e6a99.setContent(html_4d15c6f262204392b8ac11741987859a);
+            
+
+            circle_marker_eff26e410bd64514a5c74051b5772bb1.bindPopup(popup_b03af20a1022447c85291a93db7e6a99);
+
+            
+        
+    
+            var circle_marker_10a1ad5648b842ab80f5499ff90ef864 = L.circleMarker(
+                [44.5993732,-71.51535989999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_85d392935ba940f0a71372494e10d96b = L.popup({maxWidth: '300'});
+
+            
+                var html_124b2201715f40c182330719710bc182 = $('<div id="html_124b2201715f40c182330719710bc182" style="width: 100.0%; height: 100.0%;">Store Number: 14094</div>')[0];
+                popup_85d392935ba940f0a71372494e10d96b.setContent(html_124b2201715f40c182330719710bc182);
+            
+
+            circle_marker_10a1ad5648b842ab80f5499ff90ef864.bindPopup(popup_85d392935ba940f0a71372494e10d96b);
+
+            
+        
+    
+            var circle_marker_4ce8183956164e0983baaada9bb1a647 = L.circleMarker(
+                [43.2292811,-71.35970619999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_016adead116b45dc9a9af633661e3af2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cc4311ee22a647fbbbbb716a30adb60d = $('<div id="html_cc4311ee22a647fbbbbb716a30adb60d" style="width: 100.0%; height: 100.0%;">Store Number: 14162</div>')[0];
+                popup_016adead116b45dc9a9af633661e3af2.setContent(html_cc4311ee22a647fbbbbb716a30adb60d);
+            
+
+            circle_marker_4ce8183956164e0983baaada9bb1a647.bindPopup(popup_016adead116b45dc9a9af633661e3af2);
+
+            
+        
+    
+            var circle_marker_2770547b117c436a98260e20572f6e76 = L.circleMarker(
+                [44.0957983,-72.0244506],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_d0bb69ecae14439c8f3768ccaab6f3ac = L.popup({maxWidth: '300'});
+
+            
+                var html_c0c5fd3805d24b0e8c3f9174c0882b4c = $('<div id="html_c0c5fd3805d24b0e8c3f9174c0882b4c" style="width: 100.0%; height: 100.0%;">Store Number: 14355</div>')[0];
+                popup_d0bb69ecae14439c8f3768ccaab6f3ac.setContent(html_c0c5fd3805d24b0e8c3f9174c0882b4c);
+            
+
+            circle_marker_2770547b117c436a98260e20572f6e76.bindPopup(popup_d0bb69ecae14439c8f3768ccaab6f3ac);
+
+            
+        
+    
+            var circle_marker_9c4d04d2081e47aa860f65142233afb9 = L.circleMarker(
+                [43.1482315,-71.00343840000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_ea7af641e2524a2fa88fb4f23bc74627 = L.popup({maxWidth: '300'});
+
+            
+                var html_4863315124b6431c9a10ddda2668d11c = $('<div id="html_4863315124b6431c9a10ddda2668d11c" style="width: 100.0%; height: 100.0%;">Store Number: 14482</div>')[0];
+                popup_ea7af641e2524a2fa88fb4f23bc74627.setContent(html_4863315124b6431c9a10ddda2668d11c);
+            
+
+            circle_marker_9c4d04d2081e47aa860f65142233afb9.bindPopup(popup_ea7af641e2524a2fa88fb4f23bc74627);
+
+            
+        
+    
+            var circle_marker_a35c118995174ebc911126aef43ded72 = L.circleMarker(
+                [43.26498429999999,-71.58607239999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_36ab545748e14e75b14ec98158989221 = L.popup({maxWidth: '300'});
+
+            
+                var html_495542b782734e4e85eee5cd546b7559 = $('<div id="html_495542b782734e4e85eee5cd546b7559" style="width: 100.0%; height: 100.0%;">Store Number: 14750</div>')[0];
+                popup_36ab545748e14e75b14ec98158989221.setContent(html_495542b782734e4e85eee5cd546b7559);
+            
+
+            circle_marker_a35c118995174ebc911126aef43ded72.bindPopup(popup_36ab545748e14e75b14ec98158989221);
+
+            
+        
+    
+            var circle_marker_87d16e13a33f47c597281820e3e38041 = L.circleMarker(
+                [43.237696899999996,-72.42403569999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_57e8294ea8504133bebdb7ae38080e0a = L.popup({maxWidth: '300'});
+
+            
+                var html_9da926d0c69647c0b5a0dc932363b632 = $('<div id="html_9da926d0c69647c0b5a0dc932363b632" style="width: 100.0%; height: 100.0%;">Store Number: 14774</div>')[0];
+                popup_57e8294ea8504133bebdb7ae38080e0a.setContent(html_9da926d0c69647c0b5a0dc932363b632);
+            
+
+            circle_marker_87d16e13a33f47c597281820e3e38041.bindPopup(popup_57e8294ea8504133bebdb7ae38080e0a);
+
+            
+        
+    
+            var circle_marker_44c8a798e3394dfcb72b7e23b165aa56 = L.circleMarker(
+                [43.594640999999996,-71.7437696],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_c622d8cdffb949aca0d5e4306ab4222a = L.popup({maxWidth: '300'});
+
+            
+                var html_6c3b3fff70b0423384c83f42476888e1 = $('<div id="html_6c3b3fff70b0423384c83f42476888e1" style="width: 100.0%; height: 100.0%;">Store Number: 14877</div>')[0];
+                popup_c622d8cdffb949aca0d5e4306ab4222a.setContent(html_6c3b3fff70b0423384c83f42476888e1);
+            
+
+            circle_marker_44c8a798e3394dfcb72b7e23b165aa56.bindPopup(popup_c622d8cdffb949aca0d5e4306ab4222a);
+
+            
+        
+    
+            var circle_marker_40855b1b5d844412bc494ae9418ea74e = L.circleMarker(
+                [43.7510874,-71.40095790000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_0c9b03b52822481aa9b4d9bb44047e43 = L.popup({maxWidth: '300'});
+
+            
+                var html_d09b0a3a70134a07bcedf2cbf16431fa = $('<div id="html_d09b0a3a70134a07bcedf2cbf16431fa" style="width: 100.0%; height: 100.0%;">Store Number: 14968</div>')[0];
+                popup_0c9b03b52822481aa9b4d9bb44047e43.setContent(html_d09b0a3a70134a07bcedf2cbf16431fa);
+            
+
+            circle_marker_40855b1b5d844412bc494ae9418ea74e.bindPopup(popup_0c9b03b52822481aa9b4d9bb44047e43);
+
+            
+        
+    
+            var circle_marker_065036cee3014126a1271cbd9b052541 = L.circleMarker(
+                [43.70116489999999,-71.6462635],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_c0974abe13f444f3afe429ee407e4e64 = L.popup({maxWidth: '300'});
+
+            
+                var html_7e1ca367e61f4f3994353910df040c0f = $('<div id="html_7e1ca367e61f4f3994353910df040c0f" style="width: 100.0%; height: 100.0%;">Store Number: 15085</div>')[0];
+                popup_c0974abe13f444f3afe429ee407e4e64.setContent(html_7e1ca367e61f4f3994353910df040c0f);
+            
+
+            circle_marker_065036cee3014126a1271cbd9b052541.bindPopup(popup_c0974abe13f444f3afe429ee407e4e64);
+
+            
+        
+    
+            var circle_marker_95343d317ea74c118d6ce2b4f0ee8d38 = L.circleMarker(
+                [43.8347914,-71.2080215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_0c843f86ac784ba18e8d30f7a60e1b0f = L.popup({maxWidth: '300'});
+
+            
+                var html_8694215b4bd94984b1d3cce90cb06975 = $('<div id="html_8694215b4bd94984b1d3cce90cb06975" style="width: 100.0%; height: 100.0%;">Store Number: 15394</div>')[0];
+                popup_0c843f86ac784ba18e8d30f7a60e1b0f.setContent(html_8694215b4bd94984b1d3cce90cb06975);
+            
+
+            circle_marker_95343d317ea74c118d6ce2b4f0ee8d38.bindPopup(popup_0c843f86ac784ba18e8d30f7a60e1b0f);
+
+            
+        
+    
+            var circle_marker_a797dd33c4b04030a9e8702ad3c6dae4 = L.circleMarker(
+                [44.2121401,-71.9136369],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_320999f2a3ae4d3982e060ddae5d2ebf = L.popup({maxWidth: '300'});
+
+            
+                var html_7f46b8621b5b413484021a644269fe7f = $('<div id="html_7f46b8621b5b413484021a644269fe7f" style="width: 100.0%; height: 100.0%;">Store Number: 16061</div>')[0];
+                popup_320999f2a3ae4d3982e060ddae5d2ebf.setContent(html_7f46b8621b5b413484021a644269fe7f);
+            
+
+            circle_marker_a797dd33c4b04030a9e8702ad3c6dae4.bindPopup(popup_320999f2a3ae4d3982e060ddae5d2ebf);
+
+            
+        
+    
+            var circle_marker_eb94c17f3c884cf78fcb46b3d4323067 = L.circleMarker(
+                [43.4162747,-70.9866953],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_3b458a6279e3449690084c05a7389868 = L.popup({maxWidth: '300'});
+
+            
+                var html_ec9d2ebff6b145b5adbd5b597b4f8d6f = $('<div id="html_ec9d2ebff6b145b5adbd5b597b4f8d6f" style="width: 100.0%; height: 100.0%;">Store Number: 16388</div>')[0];
+                popup_3b458a6279e3449690084c05a7389868.setContent(html_ec9d2ebff6b145b5adbd5b597b4f8d6f);
+            
+
+            circle_marker_eb94c17f3c884cf78fcb46b3d4323067.bindPopup(popup_3b458a6279e3449690084c05a7389868);
+
+            
+        
+    
+            var circle_marker_43bc198369c84f0889a12e11879ef303 = L.circleMarker(
+                [43.34981579999999,-71.26250290000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_5d09534c168644c4b6043938750fa379 = L.popup({maxWidth: '300'});
+
+            
+                var html_f97457ad158243758147f1ed90c66199 = $('<div id="html_f97457ad158243758147f1ed90c66199" style="width: 100.0%; height: 100.0%;">Store Number: 16444</div>')[0];
+                popup_5d09534c168644c4b6043938750fa379.setContent(html_f97457ad158243758147f1ed90c66199);
+            
+
+            circle_marker_43bc198369c84f0889a12e11879ef303.bindPopup(popup_5d09534c168644c4b6043938750fa379);
+
+            
+        
+    
+            var circle_marker_6743566f85a54f65b09e92fdbf7ef71e = L.circleMarker(
+                [43.646078100000004,-72.02596949999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_0ece17bfc3a649a5bfe95b9221e8efb8 = L.popup({maxWidth: '300'});
+
+            
+                var html_fdb78a6850954a80a30416fe6ebd3293 = $('<div id="html_fdb78a6850954a80a30416fe6ebd3293" style="width: 100.0%; height: 100.0%;">Store Number: 16772</div>')[0];
+                popup_0ece17bfc3a649a5bfe95b9221e8efb8.setContent(html_fdb78a6850954a80a30416fe6ebd3293);
+            
+
+            circle_marker_6743566f85a54f65b09e92fdbf7ef71e.bindPopup(popup_0ece17bfc3a649a5bfe95b9221e8efb8);
+
+            
+        
+    
+            var circle_marker_36c8c89be2d0479eabcad2f3281c6d8c = L.circleMarker(
+                [43.0110651,-71.1615152],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_fe8172072af846d78148beab9a530eb7 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2d76075b66c40e6909c415545d60a27 = $('<div id="html_d2d76075b66c40e6909c415545d60a27" style="width: 100.0%; height: 100.0%;">Store Number: 16773</div>')[0];
+                popup_fe8172072af846d78148beab9a530eb7.setContent(html_d2d76075b66c40e6909c415545d60a27);
+            
+
+            circle_marker_36c8c89be2d0479eabcad2f3281c6d8c.bindPopup(popup_fe8172072af846d78148beab9a530eb7);
+
+            
+        
+    
+            var circle_marker_a40a9211e1f647bb9b8da5bd210df0de = L.circleMarker(
+                [43.44700539999999,-71.21266949999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_991f4465fa8e461a888425bac634b1d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_53a4256aa2c5470092205c85de249df2 = $('<div id="html_53a4256aa2c5470092205c85de249df2" style="width: 100.0%; height: 100.0%;">Store Number: 17058</div>')[0];
+                popup_991f4465fa8e461a888425bac634b1d3.setContent(html_53a4256aa2c5470092205c85de249df2);
+            
+
+            circle_marker_a40a9211e1f647bb9b8da5bd210df0de.bindPopup(popup_991f4465fa8e461a888425bac634b1d3);
+
+            
+        
+    
+            var circle_marker_dcfab4b024f3493ab931297764bbacfe = L.circleMarker(
+                [42.759432000000004,-71.87287059999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_59de3916ca784e458e7fc90d68cae198 = L.popup({maxWidth: '300'});
+
+            
+                var html_e33078c332114409bfb071760294f59f = $('<div id="html_e33078c332114409bfb071760294f59f" style="width: 100.0%; height: 100.0%;">Store Number: 17171</div>')[0];
+                popup_59de3916ca784e458e7fc90d68cae198.setContent(html_e33078c332114409bfb071760294f59f);
+            
+
+            circle_marker_dcfab4b024f3493ab931297764bbacfe.bindPopup(popup_59de3916ca784e458e7fc90d68cae198);
+
+            
+        
+    
+            var circle_marker_a8770e19fe1145979696989acaf91389 = L.circleMarker(
+                [43.7580315,-71.1385433],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_19ecbe6d5a8041e18a4812ecc971a9d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_46fc1ca684824c0a9cb9074f0cd79662 = $('<div id="html_46fc1ca684824c0a9cb9074f0cd79662" style="width: 100.0%; height: 100.0%;">Store Number: 17352</div>')[0];
+                popup_19ecbe6d5a8041e18a4812ecc971a9d9.setContent(html_46fc1ca684824c0a9cb9074f0cd79662);
+            
+
+            circle_marker_a8770e19fe1145979696989acaf91389.bindPopup(popup_19ecbe6d5a8041e18a4812ecc971a9d9);
+
+            
+        
+    
+            var circle_marker_526d80968c7545a78ae342a8027e3619 = L.circleMarker(
+                [43.1923029,-71.82809990000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_16705cb93f704ab79ad48c880c81538a = L.popup({maxWidth: '300'});
+
+            
+                var html_8fbd20d816c64c51a55a628d4d778805 = $('<div id="html_8fbd20d816c64c51a55a628d4d778805" style="width: 100.0%; height: 100.0%;">Store Number: 17389</div>')[0];
+                popup_16705cb93f704ab79ad48c880c81538a.setContent(html_8fbd20d816c64c51a55a628d4d778805);
+            
+
+            circle_marker_526d80968c7545a78ae342a8027e3619.bindPopup(popup_16705cb93f704ab79ad48c880c81538a);
+
+            
+        
+    
+            var circle_marker_5fe3aaaf42f245f785ad903c18f77192 = L.circleMarker(
+                [43.445764600000004,-71.47613220000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_56083d806dca43a7ac26cad1e34a2c3f = L.popup({maxWidth: '300'});
+
+            
+                var html_c90f88bfa0f9448d98a907a5f979ccdd = $('<div id="html_c90f88bfa0f9448d98a907a5f979ccdd" style="width: 100.0%; height: 100.0%;">Store Number: 17430</div>')[0];
+                popup_56083d806dca43a7ac26cad1e34a2c3f.setContent(html_c90f88bfa0f9448d98a907a5f979ccdd);
+            
+
+            circle_marker_5fe3aaaf42f245f785ad903c18f77192.bindPopup(popup_56083d806dca43a7ac26cad1e34a2c3f);
+
+            
+        
+    
+            var circle_marker_d577609df39f49fb856d4494f1d6eb31 = L.circleMarker(
+                [43.3127234,-71.61861569999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_00e8181132284e66bf73b2a51bb8acc8 = L.popup({maxWidth: '300'});
+
+            
+                var html_bf6700bee0b9470f978b2803cdedea34 = $('<div id="html_bf6700bee0b9470f978b2803cdedea34" style="width: 100.0%; height: 100.0%;">Store Number: 17579</div>')[0];
+                popup_00e8181132284e66bf73b2a51bb8acc8.setContent(html_bf6700bee0b9470f978b2803cdedea34);
+            
+
+            circle_marker_d577609df39f49fb856d4494f1d6eb31.bindPopup(popup_00e8181132284e66bf73b2a51bb8acc8);
+
+            
+        
+    
+            var circle_marker_85801ab4ba804d5dac88c0337cd1cea7 = L.circleMarker(
+                [42.842671,-72.1888196],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_7f208e5af9474303a37a1bd32622ce34 = L.popup({maxWidth: '300'});
+
+            
+                var html_77cff044ef5c48849bcb9e46f9e143b1 = $('<div id="html_77cff044ef5c48849bcb9e46f9e143b1" style="width: 100.0%; height: 100.0%;">Store Number: 17668</div>')[0];
+                popup_7f208e5af9474303a37a1bd32622ce34.setContent(html_77cff044ef5c48849bcb9e46f9e143b1);
+            
+
+            circle_marker_85801ab4ba804d5dac88c0337cd1cea7.bindPopup(popup_7f208e5af9474303a37a1bd32622ce34);
+
+            
+        
+    
+            var circle_marker_3755be6e6a92487195ced8a9b3a3ab35 = L.circleMarker(
+                [43.8595268,-71.633477],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_493a260677574c738b1fab94c8da82bd = L.popup({maxWidth: '300'});
+
+            
+                var html_d4399be89e034bd2b28df52c8fd9a7d9 = $('<div id="html_d4399be89e034bd2b28df52c8fd9a7d9" style="width: 100.0%; height: 100.0%;">Store Number: 17739</div>')[0];
+                popup_493a260677574c738b1fab94c8da82bd.setContent(html_d4399be89e034bd2b28df52c8fd9a7d9);
+            
+
+            circle_marker_3755be6e6a92487195ced8a9b3a3ab35.bindPopup(popup_493a260677574c738b1fab94c8da82bd);
+
+            
+        
+    
+            var circle_marker_86bbbcfb09fd4cca924a6cf12c87f34a = L.circleMarker(
+                [44.27986470000001,-71.7199992],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_549b7cabf61a441cb50e2c81b0849213 = L.popup({maxWidth: '300'});
+
+            
+                var html_85d14c2dc70b431395f53918ff9421c7 = $('<div id="html_85d14c2dc70b431395f53918ff9421c7" style="width: 100.0%; height: 100.0%;">Store Number: 18150</div>')[0];
+                popup_549b7cabf61a441cb50e2c81b0849213.setContent(html_85d14c2dc70b431395f53918ff9421c7);
+            
+
+            circle_marker_86bbbcfb09fd4cca924a6cf12c87f34a.bindPopup(popup_549b7cabf61a441cb50e2c81b0849213);
+
+            
+        
+    
+            var circle_marker_45bc3c67048a4c72b0daf59beeb02d10 = L.circleMarker(
+                [43.01772709999999,-71.9346693],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_1a5316a2a14843e0a419f768c681576d = L.popup({maxWidth: '300'});
+
+            
+                var html_f0ab812ae8bd4b5caf00e28a185ac0bf = $('<div id="html_f0ab812ae8bd4b5caf00e28a185ac0bf" style="width: 100.0%; height: 100.0%;">Store Number: 18270</div>')[0];
+                popup_1a5316a2a14843e0a419f768c681576d.setContent(html_f0ab812ae8bd4b5caf00e28a185ac0bf);
+            
+
+            circle_marker_45bc3c67048a4c72b0daf59beeb02d10.bindPopup(popup_1a5316a2a14843e0a419f768c681576d);
+
+            
+        
+    
+            var circle_marker_96937587e672460cb995b0d9e5ebf4a0 = L.circleMarker(
+                [43.2778011,-71.4616095],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_a52ff0ca704145edbb36e370f342f79b = L.popup({maxWidth: '300'});
+
+            
+                var html_4305ee4e413942a8b7bb95f4fadd2ded = $('<div id="html_4305ee4e413942a8b7bb95f4fadd2ded" style="width: 100.0%; height: 100.0%;">Store Number: 18748</div>')[0];
+                popup_a52ff0ca704145edbb36e370f342f79b.setContent(html_4305ee4e413942a8b7bb95f4fadd2ded);
+            
+
+            circle_marker_96937587e672460cb995b0d9e5ebf4a0.bindPopup(popup_a52ff0ca704145edbb36e370f342f79b);
+
+            
+        
+    
+            var circle_marker_522169a2018e4f82b4c2a68611f472f2 = L.circleMarker(
+                [43.8733693,-71.9148378],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_a24115cf43c64047bf5c2c0dd134a9b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_e75612b468324cf5a8bac41786fa2c8a = $('<div id="html_e75612b468324cf5a8bac41786fa2c8a" style="width: 100.0%; height: 100.0%;">Store Number: 19482</div>')[0];
+                popup_a24115cf43c64047bf5c2c0dd134a9b4.setContent(html_e75612b468324cf5a8bac41786fa2c8a);
+            
+
+            circle_marker_522169a2018e4f82b4c2a68611f472f2.bindPopup(popup_a24115cf43c64047bf5c2c0dd134a9b4);
+
+            
+        
+    
+            var circle_marker_a1521dedba284743b9264b30447a41e3 = L.circleMarker(
+                [42.740345,-71.7965686],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_6f7e8501a231476889218cb82b6036c0 = L.popup({maxWidth: '300'});
+
+            
+                var html_d6eacd20064649958559b3c21f3d0e63 = $('<div id="html_d6eacd20064649958559b3c21f3d0e63" style="width: 100.0%; height: 100.0%;">Store Number: 19762</div>')[0];
+                popup_6f7e8501a231476889218cb82b6036c0.setContent(html_d6eacd20064649958559b3c21f3d0e63);
+            
+
+            circle_marker_a1521dedba284743b9264b30447a41e3.bindPopup(popup_6f7e8501a231476889218cb82b6036c0);
+
+            
+        
+    
+            var circle_marker_ee389e16d18d439d8dc9608e4facb72b = L.circleMarker(
+                [42.8501281,-71.49398510000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_ffbcb5a43e5748798788c369f98975c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_974c76f4ceee4924882187c4e7cbb68e = $('<div id="html_974c76f4ceee4924882187c4e7cbb68e" style="width: 100.0%; height: 100.0%;">Store Number: 19987</div>')[0];
+                popup_ffbcb5a43e5748798788c369f98975c9.setContent(html_974c76f4ceee4924882187c4e7cbb68e);
+            
+
+            circle_marker_ee389e16d18d439d8dc9608e4facb72b.bindPopup(popup_ffbcb5a43e5748798788c369f98975c9);
+
+            
+        
+    
+            var circle_marker_c29bb7c805c345799e3245ee8eae1e44 = L.circleMarker(
+                [42.8679751,-71.9548652],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_14dbf8ccac2f417ebe8409f89d2d62a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd90f08119a74c4694f08cf206edcac5 = $('<div id="html_cd90f08119a74c4694f08cf206edcac5" style="width: 100.0%; height: 100.0%;">Store Number: 20060</div>')[0];
+                popup_14dbf8ccac2f417ebe8409f89d2d62a2.setContent(html_cd90f08119a74c4694f08cf206edcac5);
+            
+
+            circle_marker_c29bb7c805c345799e3245ee8eae1e44.bindPopup(popup_14dbf8ccac2f417ebe8409f89d2d62a2);
+
+            
+        
+    
+            var circle_marker_85f2a8ef44e94a09a4cfeb6f3aa53f74 = L.circleMarker(
+                [43.1115004,-72.42673289999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_bd7af86d01d04e6cb201b7d7e95b207a);
+            
+    
+            var popup_8a8967d8bc514fccb146c420bb38e771 = L.popup({maxWidth: '300'});
+
+            
+                var html_02e2aeceb53f44d58f85c729be44b8a1 = $('<div id="html_02e2aeceb53f44d58f85c729be44b8a1" style="width: 100.0%; height: 100.0%;">Store Number: 21301</div>')[0];
+                popup_8a8967d8bc514fccb146c420bb38e771.setContent(html_02e2aeceb53f44d58f85c729be44b8a1);
+            
+
+            circle_marker_85f2a8ef44e94a09a4cfeb6f3aa53f74.bindPopup(popup_8a8967d8bc514fccb146c420bb38e771);
+
+            
+        
+</script>
