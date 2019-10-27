@@ -9,9 +9,11 @@ dataManager.getApplicationData().then((applicationsArray) => {
     window.addEventListener("hashchange", event => {
         const applicationId = parseInt(location.hash.split("#")[1])
         const selectedApplication = applicationsArray.find(application => parseInt(application.id) === applicationId)
-        
-        appForm.buildAndAppendAppForm(selectedApplication)
-        
+        if (selectedApplication) {
+          appForm.buildAndAppendAppForm(selectedApplication)
+        } else {
+            window.alert("This application cannot be found.")
+        }
     });
 })
 
