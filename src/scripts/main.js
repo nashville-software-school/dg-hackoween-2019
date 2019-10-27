@@ -24,11 +24,11 @@ design.buildAndAppendbackgroundImage()
 
 design.buildAndAppendheader()
 
-stateResults.buildAndAppendStateResults();
 
-ranking.buildAndAppendStateRanking();
 
-footer.buildAndAppendFooter()
+// ranking.buildAndAppendStateRanking();
+
+// footer.buildAndAppendFooter()
 
 stateDropdown.createDropdown();
 

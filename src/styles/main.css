@@ -74,8 +74,9 @@ body {
 
 #title {
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 0px;
+    font-size: 1.5em;
 }
 
 #state-header {
@@ -84,13 +85,12 @@ body {
 }
 
 #state-map {
-    width: 70%;
+    width: 60%;
 
 }
 
 #state-map iframe,
 .default-map {
-    width: 70%;
     height: 450px;
     margin-left: 5%;
     margin-top: 2%;
@@ -98,6 +98,7 @@ body {
     margin-bottom: 3%;
     border: solid;
     object-fit: cover;
+    width: 100%;
 }
 
 #states {
@@ -105,32 +106,35 @@ body {
     margin-top: 1%;
 }
 
-#appForm {
+#app-form {
     margin-bottom: 10%;
     margin-left: 5%;
+    width: 40%;
+    overflow-y: auto;
+    height: 450px;
+    overflow-x: hidden;
+    padding: 1em;
 }
 
 .field {
-    margin: 2%;
+    margin: 1%;
 }
 
 .dashboard {
     display: flex;
+    justify-content: space-around;
 }
 
 .results {
-    background-color: aqua;
-    border-style: solid;
-    width: 30%;
+    background-color: white;
+    width: 100%;
     margin-right: 5%;
-    height: 475px;
-
+    /* height: 450px; */
+    padding: 1em;
 }
 
 #stateResults {
-    border-style: solid;
     width: 100%;
-    height: 40%
 }
 
 .span {
@@ -138,7 +142,6 @@ body {
 }
 
 #ranking {
-    border-style: solid;
     width: 100%;
     height: 40%
 
