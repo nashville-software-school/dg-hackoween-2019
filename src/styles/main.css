@@ -65,3 +65,12 @@
 #states {
     margin-left: 50px;
 }
+
+#appForm {
+    margin-bottom: 10%;
+    margin-left: 50px;
+}
+
+.field {
+    margin: 2%;
+}
