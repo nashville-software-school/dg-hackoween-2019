@@ -55,13 +55,16 @@
     padding-left: 25px;
 }
 
-#state-map iframe {
+#state-map iframe,
+.default-map {
     width: 60%;
     height: 450px;
     margin: 50px;
     border: solid;
+    object-fit: cover;
 }
 
 #states {
     margin-left: 50px;
 }
+
