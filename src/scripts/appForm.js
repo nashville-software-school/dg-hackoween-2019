@@ -17,10 +17,21 @@ export default{
                 <article>What is the drop-out rate?: ${appObject.dropout_rate}</article>
                 <article>What is the poverty level in the geographical area served?: ${appObject.poverty}</article>
                 <article>What is the literacy rate in the geographical area served?: ${appObject.literacy}</article>
-                <article>"If it is not the first year for this project, then how many individuals were served by this Adult Li": ${appObject.zip}</article>
-
-
-
+                <article>"If it is not the first year for this project, then how many individuals were served by this Adult Li": ${appObject.previously_served}</article>
+                <article>Statement of Impact: ${appObject.impact_statement}</article>
+                <article>Project/Program Objective: ${appObject.objective}</article>
+                <article>Project/Program Design: ${appObject.design}</article>
+                <article>Timeline: ${appObject.timeline}</article>
+                <article>Assessment Methods: ${appObject.assess_methods}</article>
+                <article>Project Facilities: ${appObject.facilities}</article>
+                <article>Available Technology: ${appObject.available_tech}</article>
+                <article>Are you requesting technology with this grant application?: ${appObject.tech_request}</article>
+                <article>"If yes, how will it be used to advance the literacy program we would be funding?": ${appObject.tech_use_how}</article>
+                <article>Revenue - Sources of Funding Total: ${appObject.funding_sources}</article>
+                <article>Budget Allocations Total: ${appObject.total_budget}</article>
+                <article>Budget Narrative: ${appObject.budget_narrative}</article>
+                <article>Latitude: ${appObject.lat}</article>
+                <article>Longitude: ${appObject.lng}</article>
             </section>
         </div>
         `
