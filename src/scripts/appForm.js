@@ -43,28 +43,61 @@ export default{
             <h2>Application</h2>
             <section id="appFormSection">
                 <div class="field">
-                    <h4>Project Title: </h4>
+                    <h4>Project Title:</h4>
                     <p>text text</p>
                 </div>
                 <div class="field">
-                    <h4>Request ID: </h4>
+                    <h4>Request ID:</h4>
                     <p>text text</p>
                 </div>
                 <div class="field">
                     <h4>Complete Organization Address:</h4>
                     <p>text text</p>
                 </div>
-                <div class="field">ZIP Code: </div>
-                <div class="field">Grant/Request Amount: </div>
-                <div class="field">Number of individuals served by funding from this Adult Literacy application Total: </div>
-                <div class="field">Is this a new project?: </div>
-                <div class="field">What is your National Literacy Directory Program ID number?: </div>
-                <div class="field">Geographic Classification: </div>
-                <div class="field">What is the unemployment rate?: </div>
-                <div class="field">What is the drop-out rate?: </div>
-                <div class="field">What is the poverty level in the geographical area served?: </div>
-                <div class="field">What is the literacy rate in the geographical area served?: </div>
-                <div class="field">"If it is not the first year for this project, then how many individuals were served by this Adult Li": </div>
+                <div class="field">
+                    <h4>ZIP Code:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Grant/Request Amount:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Number of individuals served by funding from this Adult Literacy application Total:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Is this a new project?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is your National Literacy Directory Program ID number?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>Geographic Classification:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the unemployment rate?:<h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the drop-out rate?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the poverty level in the geographical area served?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>What is the literacy rate in the geographical area served?:</h4>
+                    <p>text text</p>
+                </div>
+                <div class="field">
+                    <h4>"If it is not the first year for this project, then how many individuals were served by this Adult Li":</h4>
+                    <p>text text</p>
+                </div>
                 <div class="field">Statement of Impact: </div>
                 <div class="field">Project/Program Objective:</div>
                 <div class="field">Project/Program Design: </div>
