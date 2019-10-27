@@ -1,8 +1,8 @@
 import csv
 import json
 
-csv_filename = 'apps_by_color_merged.csv'
-json_filename = 'apps_by_color_merged.json'
+CSV_FILENAME = 'apps_by_color_merged.csv'
+JSON_FILENAME = 'apps_by_color_merged.json'
 
 key_map = {
         "Request ID": "id",
@@ -52,11 +52,11 @@ key_map = {
     }
 
 def main():
-    with open(csv_filename) as csvfile:
+    with open(CSV_FILENAME) as csvfile:
         reader = csv.DictReader(csvfile)
         data = [{key_map[key]: val for key, val in rec.items()} for rec in reader]
 
-    with open(json_filename, 'w') as jsonfile:
+    with open(JSON_FILENAME, 'w') as jsonfile:
         jsonfile.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': '), ensure_ascii=False))
 
 
