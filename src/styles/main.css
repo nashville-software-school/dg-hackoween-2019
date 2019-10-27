@@ -121,16 +121,25 @@ body {
 .results {
     background-color: aqua;
     border-style: solid;
-    width: 20%;
+    width: 30%;
+    margin-right: 5%;
+    height: 475px;
 
 }
 
 #stateResults {
     border-style: solid;
-    width: 30%;
+    width: 100%;
+    height: 40%
+}
+
+.span {
+    font-weight: 100;
 }
 
 #ranking {
     border-style: solid;
-    width: 30%;
+    width: 100%;
+    height: 40%
+
 }

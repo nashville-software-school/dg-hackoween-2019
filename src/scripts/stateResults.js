@@ -2,13 +2,13 @@ export default {
     buildAndAppendStateResults: () => {
         const stateResults = `
             <article>
-                <h4 class=title>State Info</h4>
+                <h3 class=title>State Info</h3>
                 <div>
-                    <h5>Budget Amount><span>text text</span>
-                    <h5>Total Apllications</h5><span>text text</span>
-                    <h5>Total Green Ranking</h5><span>text text</span>
-                    <h5>Total Orange Ranking</h5><span>text text</span>
-                    <h5>Total Red Ranking</h5><span>text text</span>
+                    <h5>Budget Amount: <span class="span">text text</span></h5>
+                    <h5>Total Apllications: <span class="span">text text</span></h5>
+                    <h5>Total Green Ranking: <span class="span">text text</span></h5>
+                    <h5>Total Orange Ranking: <span class="span">text text</span></h5>
+                    <h5>Total Red Ranking: <span class="span">text text</span></h5>
                 </div>
             </article>
     `

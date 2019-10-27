@@ -2,12 +2,9 @@ import design from "./design.js"
 import footer from "./footer.js"
 import stateDropdown from "./stateDropdown.js";
 import appForm from "./appForm.js";
-<<<<<<< HEAD
 import stateResults from "./stateResults.js";
-=======
 import dataManager from "./dataManager.js";
 
->>>>>>> master
 
 dataManager.getApplicationData().then((applicationsArray) => {
     window.addEventListener("hashchange", event => {
@@ -24,6 +21,8 @@ dataManager.getApplicationData().then((applicationsArray) => {
 design.buildAndAppendbackgroundImage()
 
 design.buildAndAppendheader()
+
+stateResults.buildAndAppendStateResults();
 
 footer.buildAndAppendFooter()
 
