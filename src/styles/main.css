@@ -83,19 +83,21 @@ body {
     margin-bottom: 0px;
 }
 
+#state-map {
+    width: 70%;
+
+}
+
 #state-map iframe,
 .default-map {
-    width: 60%;
+    width: 70%;
     height: 450px;
     margin-left: 5%;
     margin-top: 2%;
+    margin-right: 5%;
     margin-bottom: 3%;
     border: solid;
     object-fit: cover;
-}
-
-#state-map {
-    
 }
 
 #states {
@@ -119,6 +121,8 @@ body {
 .results {
     background-color: aqua;
     border-style: solid;
+    width: 20%;
+
 }
 
 #stateResults {
