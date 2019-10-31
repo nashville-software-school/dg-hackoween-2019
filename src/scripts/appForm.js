@@ -37,7 +37,7 @@ const appForm = {
                 </div>
                 <div class="field">
                     <h4 class="app-form-question">Color Ranking:</h4>
-                    <p class="app-form-answer">${appObject.color}</p>
+                    <p class="app-form-answer">${appObject.color === "yellow" ? "orange" : appObject.color}</p>
                 </div>
                 <div class="field">
                     <h4 class="app-form-question">Has National ID:</h4>
