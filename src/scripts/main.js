@@ -13,7 +13,13 @@ dataManager.getApplicationData().then((applicationsArray) => {
         const applicationId = parseInt(location.hash.split("#")[1])
         const selectedApplication = applicationsArray.find(application => parseInt(application.id) === applicationId)
         if (selectedApplication) {
-          appForm.buildAndAppendAppForm(selectedApplication)
+            // Loop over object properties to check for empty responses and replace with "Answer not provided by applicant"
+            for (const key in selectedApplication) {
+                if (selectedApplication[key] === "") {
+                    selectedApplication[key] = "(Answer not provided by applicant)"
+                }
+            }
+            appForm.buildAndAppendAppForm(selectedApplication)
         } else {
             window.alert("This application cannot be found.")
         }
@@ -22,13 +28,7 @@ dataManager.getApplicationData().then((applicationsArray) => {
 
 design.buildAndAppendbackgroundImage()
 
-design.buildAndAppendheader()
-
-
-
-// ranking.buildAndAppendStateRanking();
-
-// footer.buildAndAppendFooter()
+// design.buildAndAppendheader()
 
 stateDropdown.createDropdown();
 

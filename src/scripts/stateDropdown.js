@@ -19,7 +19,12 @@ const stateDropdown = {
     getStateData(selectedState) {
         data.getAggregatedData().then((stateResultsArray) => {
             const stateData = stateResultsArray.find(state => state.state === selectedState)
-            stateResults.buildAndAppendStateResults(stateData);
+            if (stateData)
+            {
+                stateResults.buildAndAppendStateResults(stateData);
+            } else {
+                stateResults.resultsNotFound()
+            }
         })
     },
     handleSelection(event) {
