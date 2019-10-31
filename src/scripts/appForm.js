@@ -11,7 +11,7 @@ const appForm = {
                     // Loop over object properties to check for empty responses and replace with "Answer not provided by applicant"
                     for (const key in selectedApplication) {
                         if (selectedApplication[key] === "") {
-                            selectedApplication[key] = "(Answer not provided by applicant)"
+                            selectedApplication[key] = "(Data not available)"
                         }
                     }
                     appForm.buildAndAppendAppForm(selectedApplication)
