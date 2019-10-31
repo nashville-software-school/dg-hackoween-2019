@@ -17,52 +17,12 @@ body {
     margin: 0;
 }
 
-.global-footer-nav {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #253e59;
-    color: white;
-    text-align: center;
-    height: 10%;
-}
-
-.global-footer-nav div {
-    display: flex;
-    align-items: center;
-    /* justify-content: center;
-    align-self: center; */
-
-}
-
-.nss-logo {
-    width: 80%;
-}
-
-.nss-home {
-    width: 300px;
-}
-
-.hackoween {
-    width: 45%;
-}
-.dg-logo {
-    width: 70%;
-}
-
-.cg-logo {
-    width: 80%;
-    background-color: white;
-}
-
 #header .global-header {
     margin: 0 auto;
-    background-color: white;
     height: 10%;
     padding: 0px;
+    display: flex;
+    
 }
 
 .dg-literacy-logo {

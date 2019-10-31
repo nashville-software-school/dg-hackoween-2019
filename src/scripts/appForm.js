@@ -1,6 +1,28 @@
-export default {
+import dataManager from "./dataManager.js"
+
+
+const appForm = {
+    getAppDataAndAddHashChangeListener: () => {
+        dataManager.getApplicationData().then((applicationsArray) => {
+            window.addEventListener("hashchange", event => {
+                const applicationId = parseInt(location.hash.split("#")[1])
+                const selectedApplication = applicationsArray.find(application => parseInt(application.id) === applicationId)
+                if (selectedApplication) {
+                    // Loop over object properties to check for empty responses and replace with "Answer not provided by applicant"
+                    for (const key in selectedApplication) {
+                        if (selectedApplication[key] === "") {
+                            selectedApplication[key] = "(Answer not provided by applicant)"
+                        }
+                    }
+                    appForm.buildAndAppendAppForm(selectedApplication)
+                } else {
+                    window.alert("This application cannot be found.")
+                }
+            });
+        })
+    },
     buildAndAppendAppForm: (appObject) => {
-        const appForm =
+        const application =
             `
         <div class ="appForm">
             <h2 class="application-header">Application</h2>
@@ -126,6 +148,8 @@ export default {
         `
 
         const appFormContainerDiv = document.querySelector("#app-and-data-container")
-        appFormContainerDiv.innerHTML = appForm
+        appFormContainerDiv.innerHTML = application
     }
 }
+
+export default appForm
