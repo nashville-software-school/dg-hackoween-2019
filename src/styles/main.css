@@ -4,7 +4,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-image: url('https://www.dgliteracy.org/wp-content/uploads/2018/04/home_module_numbers_bg-1.jpg');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,52 +17,12 @@ body {
     margin: 0;
 }
 
-.global-footer-nav {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #253e59;
-    color: white;
-    text-align: center;
-    height: 10%;
-}
-
-.global-footer-nav div {
-    display: flex;
-    align-items: center;
-    /* justify-content: center;
-    align-self: center; */
-
-}
-
-.nss-logo {
-    width: 80%;
-}
-
-.nss-home {
-    width: 300px;
-}
-
-.hackoween {
-    width: 45%;
-}
-.dg-logo {
-    width: 70%;
-}
-
-.cg-logo {
-    width: 80%;
-    background-color: white;
-}
-
 #header .global-header {
     margin: 0 auto;
-    background-color: white;
     height: 10%;
     padding: 0px;
+    display: flex;
+
 }
 
 .dg-literacy-logo {
@@ -74,7 +34,6 @@ body {
 
 #title {
     margin-left: 5%;
-    margin-top: 2%;
     margin-bottom: 0px;
     font-size: 1.5em;
 }
@@ -86,16 +45,14 @@ body {
 
 #state-map {
     width: 60%;
+    margin: 1em 1em 1em 2em;
+    height: 450px;
 
 }
 
 #state-map iframe,
 .default-map {
     height: 450px;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-right: 5%;
-    margin-bottom: 3%;
     border: solid;
     object-fit: cover;
     width: 100%;
@@ -106,19 +63,18 @@ body {
     margin-top: 1%;
 }
 
-#app-form {
-    margin-bottom: 10%;
-    margin-left: 5%;
-    width: 40%;
-    overflow-y: auto;
-    height: 450px;
-    overflow-x: hidden;
-    padding: 1em;
+.application-header {
+    margin: 0;
 }
 
-.field {
-    margin: 1%;
+.app-form-question {
+    margin: .75em 0 .2em 0;
 }
+
+.app-form-answer {
+    margin: 0;
+}
+
 
 .dashboard {
     display: flex;
@@ -127,16 +83,28 @@ body {
 
 .results {
     background-color: white;
-    width: 100%;
-    margin-right: 5%;
-    /* height: 450px; */
-    padding: 1em;
+    width: 40%;
+    margin: 1em 1em 1em 1em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 450px;
+    padding: 2em;
+    box-shadow:5px 5px 20px grey;
+
 }
 
-#stateResults {
-    width: 100%;
+.appForm {
+    max-height: 450px;
 }
 
+.state-results-header {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.summary-text {
+    font-size: 1em;
+}
 .span {
     font-weight: 100;
 }

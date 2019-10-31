@@ -4,8 +4,6 @@ export default {
         const backgroundImage = `
         <div id ="background"></div>
         `
-        // console.log(backgroundImage)
-
         const backgroundContainerDiv = document.querySelector("#background-container")
         backgroundContainerDiv.innerHTML = backgroundImage
     },
@@ -13,14 +11,11 @@ export default {
     buildAndAppendheader: () => {
         const navBarHeader = `
         <header class="global-header">
-            <a href="https://www.dgliteracy.org/" title="Dollar General Literacy Foundation" rel="home">
-                <img class="dg-literacy-logo" src="https://www.dgliteracy.org/wp-content/themes/dg-literacy/assets/images/dg-literacy-logo_656w.png" alt="Dollar General Literacy Foundation">
-            </a>
-            </div>
+                <img class="dg-literacy-logo" src="../images/dg-literacy-logo.png" alt="Dollar General Literacy Foundation">
+                <h1 id="title">Grant Application Lookup</h1>
+
         </header>
         `
-        // console.log("hello", navBarHeader)
-
         const headerContainer = document.querySelector("#header")
         headerContainer.innerHTML = navBarHeader
     }
