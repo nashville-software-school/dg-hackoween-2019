@@ -1,9 +1,9 @@
 // FIXME: change url to point to new and REAL JSON data
-const stateURL = "https://raw.githubusercontent.com/nashville-software-school/dg-hackoween-2019/master/data/states.json"
+const stateURL = "http://127.0.0.1:8080/data/states.json"
 
-const applicationURL = "https://raw.githubusercontent.com/nashville-software-school/dg-hackoween-2019/master/csv_to_json_script/apps_by_color_merged.json"
+const applicationURL = "http://127.0.0.1:8080/csv_to_json_script/apps_by_color_merged.json"
 
-const aggregatedDataURL = "https://raw.githubusercontent.com/nashville-software-school/dg-hackoween-2019/master/csv_to_json_script/State_aggregations.json"
+const aggregatedDataURL = "http://127.0.0.1:8080/csv_to_json_script/State_aggregations.json"
 
 const getStates = () => {
     return fetch(`${stateURL}`)
