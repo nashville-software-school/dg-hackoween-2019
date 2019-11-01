@@ -28,8 +28,8 @@ const stateDropdown = {
         })
     },
     handleSelection(event) {
-        const selectedState = event.target.value
-        mapContainer.innerHTML = `<iframe src="./maps/${selectedState}-map.html"></iframe>`
+        const selectedState = event.target.value;
+        mapContainer.innerHTML = `<iframe src="./maps/${selectedState.toLowerCase()}-map.html"></iframe>`
         stateDropdown.getStateData(selectedState)
     }
 }
