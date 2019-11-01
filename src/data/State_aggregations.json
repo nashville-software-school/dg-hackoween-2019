@@ -1,354 +1,354 @@
 [
     {
         "state": "AL",
+        "budget": "147325",
         "app_count": "17",
-        "green": "14.0",
-        "red": "0.0",
-        "yellow": "3.0",
-        "budget": "147325.0"
+        "green": "14",
+        "yellow": "3",
+        "red": "0"
     },
     {
         "state": "AR",
+        "budget": "84130",
         "app_count": "18",
-        "green": "8.0",
-        "red": "1.0",
-        "yellow": "9.0",
-        "budget": "84130.0"
+        "green": "8",
+        "yellow": "9",
+        "red": "1"
     },
     {
         "state": "AZ",
-        "app_count": "2",
-        "green": "2.0",
-        "red": "0.0",
-        "yellow": "0.0",
-        "budget": "22874.0"
+        "budget": "22874",
+        "app_count": "4",
+        "green": "2",
+        "yellow": "2",
+        "red": "0"
     },
     {
         "state": "CA",
-        "app_count": "12",
-        "green": "4.0",
-        "red": "3.0",
-        "yellow": "5.0",
-        "budget": "42647.0"
+        "budget": "42647",
+        "app_count": "19",
+        "green": "4",
+        "yellow": "5",
+        "red": "10"
     },
     {
         "state": "CO",
+        "budget": "9111",
         "app_count": "7",
-        "green": "1.0",
-        "red": "5.0",
-        "yellow": "1.0",
-        "budget": "9111.0"
+        "green": "1",
+        "yellow": "1",
+        "red": "5"
     },
     {
         "state": "CT",
-        "app_count": "5",
-        "green": "1.0",
-        "red": "3.0",
-        "yellow": "1.0",
-        "budget": "10856.0"
+        "budget": "10856",
+        "app_count": "6",
+        "green": "1",
+        "yellow": "1",
+        "red": "4"
     },
     {
         "state": "DE",
+        "budget": "8723",
         "app_count": "3",
-        "green": "1.0",
-        "red": "1.0",
-        "yellow": "1.0",
-        "budget": "8723.0"
+        "green": "1",
+        "yellow": "1",
+        "red": "1"
     },
     {
         "state": "FL",
+        "budget": "165934",
         "app_count": "32",
-        "green": "16.0",
-        "red": "0.0",
-        "yellow": "16.0",
-        "budget": "165934.0"
+        "green": "16",
+        "yellow": "16",
+        "red": "0"
     },
     {
         "state": "GA",
+        "budget": "169036",
         "app_count": "31",
-        "green": "17.0",
-        "red": "0.0",
-        "yellow": "14.0",
-        "budget": "169036.0"
+        "green": "17",
+        "yellow": "14",
+        "red": "0"
     },
     {
         "state": "IA",
+        "budget": "46911",
         "app_count": "10",
-        "green": "4.0",
-        "red": "1.0",
-        "yellow": "5.0",
-        "budget": "46911.0"
+        "green": "4",
+        "yellow": "5",
+        "red": "1"
     },
     {
         "state": "IL",
+        "budget": "106229",
         "app_count": "35",
-        "green": "10.0",
-        "red": "14.0",
-        "yellow": "11.0",
-        "budget": "106229.0"
+        "green": "10",
+        "yellow": "11",
+        "red": "14"
     },
     {
         "state": "IN",
+        "budget": "101770",
         "app_count": "14",
-        "green": "10.0",
-        "red": "0.0",
-        "yellow": "4.0",
-        "budget": "101770.0"
+        "green": "10",
+        "yellow": "4",
+        "red": "0"
     },
     {
         "state": "KS",
+        "budget": "45748",
         "app_count": "7",
-        "green": "4.0",
-        "red": "0.0",
-        "yellow": "3.0",
-        "budget": "45748.0"
+        "green": "4",
+        "yellow": "3",
+        "red": "0"
     },
     {
         "state": "KY",
+        "budget": "102934",
         "app_count": "34",
-        "green": "10.0",
-        "red": "13.0",
-        "yellow": "11.0",
-        "budget": "102934.0"
+        "green": "10",
+        "yellow": "11",
+        "red": "13"
     },
     {
         "state": "LA",
+        "budget": "108361",
         "app_count": "18",
-        "green": "11.0",
-        "red": "0.0",
-        "yellow": "7.0",
-        "budget": "108361.0"
+        "green": "11",
+        "yellow": "7",
+        "red": "0"
     },
     {
         "state": "MA",
+        "budget": "8723",
         "app_count": "12",
-        "green": "1.0",
-        "red": "10.0",
-        "yellow": "1.0",
-        "budget": "8723.0"
+        "green": "1",
+        "yellow": "1",
+        "red": "10"
     },
     {
         "state": "MD",
+        "budget": "26557",
         "app_count": "12",
-        "green": "3.0",
-        "red": "7.0",
-        "yellow": "2.0",
-        "budget": "26557.0"
+        "green": "2",
+        "yellow": "3",
+        "red": "7"
     },
     {
         "state": "ME",
+        "budget": "10662",
         "app_count": "6",
-        "green": "1.0",
-        "red": "4.0",
-        "yellow": "1.0",
-        "budget": "10662.0"
+        "green": "1",
+        "yellow": "1",
+        "red": "4"
     },
     {
         "state": "MI",
+        "budget": "100607",
         "app_count": "25",
-        "green": "10.0",
-        "red": "5.0",
-        "yellow": "10.0",
-        "budget": "100607.0"
+        "green": "10",
+        "yellow": "10",
+        "red": "5"
     },
     {
         "state": "MN",
+        "budget": "26363",
         "app_count": "8",
-        "green": "2.0",
-        "red": "3.0",
-        "yellow": "3.0",
-        "budget": "26363.0"
+        "green": "2",
+        "yellow": "3",
+        "red": "3"
     },
     {
         "state": "MO",
+        "budget": "100414",
         "app_count": "16",
-        "green": "10.0",
-        "red": "0.0",
-        "yellow": "6.0",
-        "budget": "100414.0"
+        "green": "10",
+        "yellow": "6",
+        "red": "0"
     },
     {
         "state": "MS",
+        "budget": "99250",
         "app_count": "18",
-        "green": "10.0",
-        "red": "0.0",
-        "yellow": "8.0",
-        "budget": "99250.0"
+        "green": "10",
+        "yellow": "8",
+        "red": "0"
     },
     {
         "state": "NC",
+        "budget": "158374",
         "app_count": "22",
-        "green": "16.0",
-        "red": "0.0",
-        "yellow": "6.0",
-        "budget": "158374.0"
+        "green": "16",
+        "yellow": "6",
+        "red": "0"
     },
     {
         "state": "ND",
+        "budget": "5040",
         "app_count": "1",
-        "green": "1.0",
-        "red": "0.0",
-        "yellow": "0.0",
-        "budget": "5040.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "0"
     },
     {
         "state": "NE",
+        "budget": "23843",
         "app_count": "7",
-        "green": "2.0",
-        "red": "2.0",
-        "yellow": "3.0",
-        "budget": "23843.0"
+        "green": "2",
+        "yellow": "3",
+        "red": "2"
     },
     {
         "state": "NH",
+        "budget": "6979",
         "app_count": "3",
-        "green": "1.0",
-        "red": "2.0",
-        "yellow": "0.0",
-        "budget": "6979.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "2"
     },
     {
         "state": "NJ",
+        "budget": "25782",
         "app_count": "11",
-        "green": "2.0",
-        "red": "6.0",
-        "yellow": "3.0",
-        "budget": "25782.0"
+        "green": "2",
+        "yellow": "3",
+        "red": "6"
     },
     {
         "state": "NM",
+        "budget": "19385",
         "app_count": "8",
-        "green": "2.0",
-        "red": "4.0",
-        "yellow": "2.0",
-        "budget": "19385.0"
+        "green": "2",
+        "yellow": "2",
+        "red": "4"
     },
     {
         "state": "NV",
+        "budget": "4265",
         "app_count": "2",
-        "green": "1.0",
-        "red": "1.0",
-        "yellow": "0.0",
-        "budget": "4265.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "1"
     },
     {
         "state": "NY",
+        "budget": "89946",
         "app_count": "41",
-        "green": "9.0",
-        "red": "23.0",
-        "yellow": "9.0",
-        "budget": "89946.0"
+        "green": "9",
+        "yellow": "9",
+        "red": "23"
     },
     {
         "state": "OH",
+        "budget": "154691",
         "app_count": "26",
-        "green": "15.0",
-        "red": "0.0",
-        "yellow": "11.0",
-        "budget": "154691.0"
+        "green": "15",
+        "yellow": "11",
+        "red": "0"
     },
     {
         "state": "OK",
+        "budget": "85681",
         "app_count": "13",
-        "green": "8.0",
-        "red": "0.0",
-        "yellow": "5.0",
-        "budget": "85681.0"
+        "green": "8",
+        "yellow": "5",
+        "red": "0"
     },
     {
         "state": "OR",
-        "app_count": "2",
-        "green": "1.0",
-        "red": "0.0",
-        "yellow": "1.0",
-        "budget": "10080.0"
+        "budget": "10080",
+        "app_count": "3",
+        "green": "1",
+        "yellow": "1",
+        "red": "1"
     },
     {
         "state": "PA",
+        "budget": "143060",
         "app_count": "35",
-        "green": "14.0",
-        "red": "6.0",
-        "yellow": "15.0",
-        "budget": "143060.0"
+        "green": "14",
+        "yellow": "15",
+        "red": "6"
     },
     {
         "state": "RI",
+        "budget": "3102",
         "app_count": "2",
-        "green": "1.0",
-        "red": "1.0",
-        "yellow": "0.0",
-        "budget": "3102.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "1"
     },
     {
         "state": "SC",
+        "budget": "105066",
         "app_count": "14",
-        "green": "10.0",
-        "red": "0.0",
-        "yellow": "4.0",
-        "budget": "105066.0"
+        "green": "10",
+        "yellow": "4",
+        "red": "0"
     },
     {
         "state": "SD",
+        "budget": "10080",
         "app_count": "1",
-        "green": "1.0",
-        "red": "0.0",
-        "yellow": "0.0",
-        "budget": "10080.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "0"
     },
     {
         "state": "TN",
+        "budget": "151202",
         "app_count": "45",
-        "green": "15.0",
-        "red": "15.0",
-        "yellow": "15.0",
-        "budget": "151202.0"
+        "green": "15",
+        "yellow": "15",
+        "red": "15"
     },
     {
         "state": "TX",
+        "budget": "287865",
         "app_count": "55",
-        "green": "29.0",
-        "red": "0.0",
-        "yellow": "26.0",
-        "budget": "287865.0"
+        "green": "29",
+        "yellow": "26",
+        "red": "0"
     },
     {
         "state": "UT",
+        "budget": "2132",
         "app_count": "1",
-        "green": "1.0",
-        "red": "0.0",
-        "yellow": "0.0",
-        "budget": "2132.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "0"
     },
     {
         "state": "VA",
-        "app_count": "20",
-        "green": "8.0",
-        "red": "4.0",
-        "yellow": "8.0",
-        "budget": "81223.0"
+        "budget": "81223",
+        "app_count": "21",
+        "green": "8",
+        "yellow": "8",
+        "red": "5"
     },
     {
         "state": "VT",
+        "budget": "6979",
         "app_count": "1",
-        "green": "1.0",
-        "red": "0.0",
-        "yellow": "0.0",
-        "budget": "6979.0"
+        "green": "1",
+        "yellow": "0",
+        "red": "0"
     },
     {
         "state": "WI",
+        "budget": "33148",
         "app_count": "16",
-        "green": "3.0",
-        "red": "10.0",
-        "yellow": "3.0",
-        "budget": "33148.0"
+        "green": "3",
+        "yellow": "4",
+        "red": "9"
     },
     {
         "state": "WV",
+        "budget": "46911",
         "app_count": "6",
-        "green": "4.0",
-        "red": "0.0",
-        "yellow": "2.0",
-        "budget": "46911.0"
+        "green": "4",
+        "yellow": "2",
+        "red": "0"
     }
 ]
