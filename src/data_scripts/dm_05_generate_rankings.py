@@ -79,5 +79,6 @@ key_map = {
     }
 
 merger_again = merger_again.rename(columns = key_map)
+merger_again.columns = [x.strip().lower().replace(' ', '_') for x in merger_again.columns]
 
 merger_again.to_csv('./data/final/apps_final.csv', index = False)

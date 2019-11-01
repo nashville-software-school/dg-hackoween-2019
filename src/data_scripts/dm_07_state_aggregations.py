@@ -9,6 +9,7 @@ budget = pd.read_csv('./data/raw/budget_by_state.csv')
 
 budget.columns = [x.lower().strip() for x in budget.columns]
 budget.budget = budget.budget.str.strip().str[1:].str.replace(',', '').astype('int')
+budget.state = budget.state.str.strip()
 budget = budget[['state', 'budget']]
 
 def get_total_applications(state):
