@@ -1,1313 +1,2110 @@
 <!DOCTYPE html>
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_192ce58ea3ce4635bd04d573b2dddc19 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
+            <style> #map_9c71441f83cb4678b04c7d39bf6da969 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
                 }
             </style>
         
 </head>
 <body>    
     
-            <div class="folium-map" id="map_192ce58ea3ce4635bd04d573b2dddc19" ></div>
+            <div class="folium-map" id="map_9c71441f83cb4678b04c7d39bf6da969" ></div>
         
 </body>
 <script>    
     
-            var map_192ce58ea3ce4635bd04d573b2dddc19 = L.map(
-                "map_192ce58ea3ce4635bd04d573b2dddc19",
-                {
-                    center: [42.062939799999995, -71.718067],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 7,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
 
             
-
-        
-    
-            var tile_layer_a7aee6e555a84ffeb7da347cec2d48b9 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var marker_34a88aa9b0bf4bd9b8664a11c383a6ca = L.marker(
-                [42.7045296, -71.14437649999998],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_316a44a70e6540c584878715277b32de = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_34a88aa9b0bf4bd9b8664a11c383a6ca.setIcon(icon_316a44a70e6540c584878715277b32de);
-        
-    
-        var popup_310147659eb64b83abff991fdbe122cf = L.popup({"maxWidth": "100%"});
-
-        
-            var html_12cbda1167224453b582ee38160fe33f = $(`<div id="html_12cbda1167224453b582ee38160fe33f" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#51663015\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_310147659eb64b83abff991fdbe122cf.setContent(html_12cbda1167224453b582ee38160fe33f);
-        
-
-        marker_34a88aa9b0bf4bd9b8664a11c383a6ca.bindPopup(popup_310147659eb64b83abff991fdbe122cf)
-        ;
-
-        
-    
-    
-            var marker_5889f01afbc9443fa17353ee20e4b0c8 = L.marker(
-                [42.2913162, -71.06356590000001],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_ac7be1656abf41dcb348a47def49a08b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_5889f01afbc9443fa17353ee20e4b0c8.setIcon(icon_ac7be1656abf41dcb348a47def49a08b);
-        
-    
-        var popup_2ff3ef9b67b8493a8eeba4998c7b5c61 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_a02df834c2734ba7a0840e839ce3d2b2 = $(`<div id="html_a02df834c2734ba7a0840e839ce3d2b2" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#51969201\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_2ff3ef9b67b8493a8eeba4998c7b5c61.setContent(html_a02df834c2734ba7a0840e839ce3d2b2);
-        
-
-        marker_5889f01afbc9443fa17353ee20e4b0c8.bindPopup(popup_2ff3ef9b67b8493a8eeba4998c7b5c61)
-        ;
-
-        
-    
-    
-            var marker_1a14a2ca2c744a1eb2fd570ee6cfccae = L.marker(
-                [42.1212216, -72.7495704],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_7789d0872d5548948d91365f86fb512c = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_1a14a2ca2c744a1eb2fd570ee6cfccae.setIcon(icon_7789d0872d5548948d91365f86fb512c);
-        
-    
-        var popup_85f85d74856f42c3a68af989313ff435 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_2dd7ddff383d4b4aa746d7da8bc62abe = $(`<div id="html_2dd7ddff383d4b4aa746d7da8bc62abe" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#51977263\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_85f85d74856f42c3a68af989313ff435.setContent(html_2dd7ddff383d4b4aa746d7da8bc62abe);
-        
-
-        marker_1a14a2ca2c744a1eb2fd570ee6cfccae.bindPopup(popup_85f85d74856f42c3a68af989313ff435)
-        ;
-
-        
-    
-    
-            var marker_5844854c52ae418ca0966b61bb417cf5 = L.marker(
-                [42.27911629999999, -71.40880809999999],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_87ead6e7f9d245c09961cdc0b2cf2194 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
-            );
-            marker_5844854c52ae418ca0966b61bb417cf5.setIcon(icon_87ead6e7f9d245c09961cdc0b2cf2194);
-        
-    
-        var popup_bc86aa774eaf42ef83a5a5090417db85 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_dfeabbf981a0424397655401a7b69d6f = $(`<div id="html_dfeabbf981a0424397655401a7b69d6f" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#51994177\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_bc86aa774eaf42ef83a5a5090417db85.setContent(html_dfeabbf981a0424397655401a7b69d6f);
-        
-
-        marker_5844854c52ae418ca0966b61bb417cf5.bindPopup(popup_bc86aa774eaf42ef83a5a5090417db85)
-        ;
-
-        
-    
-    
-            var marker_0d2c390e32cc403c92ca79297f494442 = L.marker(
-                [42.7741839, -71.08234689999998],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_a6b36c9d85674a1da07edbdaade66991 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_0d2c390e32cc403c92ca79297f494442.setIcon(icon_a6b36c9d85674a1da07edbdaade66991);
-        
-    
-        var popup_ef68e4bb85b54836abda2b7d06ac07f0 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_e7d01112e01445628ed15013361d31eb = $(`<div id="html_e7d01112e01445628ed15013361d31eb" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52392811\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_ef68e4bb85b54836abda2b7d06ac07f0.setContent(html_e7d01112e01445628ed15013361d31eb);
-        
-
-        marker_0d2c390e32cc403c92ca79297f494442.bindPopup(popup_ef68e4bb85b54836abda2b7d06ac07f0)
-        ;
-
-        
-    
-    
-            var marker_507fe13215774de3a79dbafd3536dd7f = L.marker(
-                [42.3408, -71.08178099999998],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_8fafebce40324882a56636b88f8399e0 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_507fe13215774de3a79dbafd3536dd7f.setIcon(icon_8fafebce40324882a56636b88f8399e0);
-        
-    
-        var popup_409d1edc73c14018ab8d7de69536d59a = L.popup({"maxWidth": "100%"});
-
-        
-            var html_088f6ce432ef48dda0e526b7c50f5f6f = $(`<div id="html_088f6ce432ef48dda0e526b7c50f5f6f" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52504493\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_409d1edc73c14018ab8d7de69536d59a.setContent(html_088f6ce432ef48dda0e526b7c50f5f6f);
-        
-
-        marker_507fe13215774de3a79dbafd3536dd7f.bindPopup(popup_409d1edc73c14018ab8d7de69536d59a)
-        ;
-
-        
-    
-    
-            var marker_e7a65f2a0bb04abab68efd18e9224470 = L.marker(
-                [42.7958144, -71.04709919999998],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_5966a12424ff44a98f033bc070c0326b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_e7a65f2a0bb04abab68efd18e9224470.setIcon(icon_5966a12424ff44a98f033bc070c0326b);
-        
-    
-        var popup_9e37d083f06349f58d111c5bbc8c0e71 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_39ba3bbb08784e26bfa0340d4f301b5e = $(`<div id="html_39ba3bbb08784e26bfa0340d4f301b5e" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52514009\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_9e37d083f06349f58d111c5bbc8c0e71.setContent(html_39ba3bbb08784e26bfa0340d4f301b5e);
-        
-
-        marker_e7a65f2a0bb04abab68efd18e9224470.bindPopup(popup_9e37d083f06349f58d111c5bbc8c0e71)
-        ;
-
-        
-    
-    
-            var marker_ee31cc58479e49c39342cee1bc16fcad = L.marker(
-                [42.37623019999999, -72.52090820000002],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_86d8371851764ff0a57ce0e4db27ad62 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_ee31cc58479e49c39342cee1bc16fcad.setIcon(icon_86d8371851764ff0a57ce0e4db27ad62);
-        
-    
-        var popup_839423164d674b8c988544070b7fd167 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_9f328df697c64e7a97fabe780e5508d8 = $(`<div id="html_9f328df697c64e7a97fabe780e5508d8" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52854431\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_839423164d674b8c988544070b7fd167.setContent(html_9f328df697c64e7a97fabe780e5508d8);
-        
-
-        marker_ee31cc58479e49c39342cee1bc16fcad.bindPopup(popup_839423164d674b8c988544070b7fd167)
-        ;
-
-        
-    
-    
-            var marker_fa04565f26ab434d904061040c2f890b = L.marker(
-                [42.3522335, -71.06663],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_b7217c9eb0ec49b59682aa8eb1835c2e = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
-            );
-            marker_fa04565f26ab434d904061040c2f890b.setIcon(icon_b7217c9eb0ec49b59682aa8eb1835c2e);
-        
-    
-        var popup_c120a43040f4400084324cb1197468c1 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_16dd668028a345638b746b0907c6500d = $(`<div id="html_16dd668028a345638b746b0907c6500d" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52886327\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_c120a43040f4400084324cb1197468c1.setContent(html_16dd668028a345638b746b0907c6500d);
-        
-
-        marker_fa04565f26ab434d904061040c2f890b.bindPopup(popup_c120a43040f4400084324cb1197468c1)
-        ;
-
-        
-    
-    
-            var marker_ecfd92ef39c949348d57af2725cdc442 = L.marker(
-                [42.35305049999999, -71.061089],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_f21a8ed9e78341acac3b197ec083256a = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_ecfd92ef39c949348d57af2725cdc442.setIcon(icon_f21a8ed9e78341acac3b197ec083256a);
-        
-    
-        var popup_68da7dba54e3439c81834dfba4677fc5 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_a5bb7d9099934a2fa719678c013d1cf8 = $(`<div id="html_a5bb7d9099934a2fa719678c013d1cf8" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52922309\'; void(0)"> View App </a><br/>Has required Keyword: False<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_68da7dba54e3439c81834dfba4677fc5.setContent(html_a5bb7d9099934a2fa719678c013d1cf8);
-        
-
-        marker_ecfd92ef39c949348d57af2725cdc442.bindPopup(popup_68da7dba54e3439c81834dfba4677fc5)
-        ;
-
-        
-    
-    
-            var marker_fb1a4799d8b74a0a9b5298e6e1627a8a = L.marker(
-                [41.9459266, -71.2870033],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_33435668e1bf40868f97ec13150b19fb = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_fb1a4799d8b74a0a9b5298e6e1627a8a.setIcon(icon_33435668e1bf40868f97ec13150b19fb);
-        
-    
-        var popup_24822e016b7640ba80b7750d092a336d = L.popup({"maxWidth": "100%"});
-
-        
-            var html_e963396814d642628869b080629490a7 = $(`<div id="html_e963396814d642628869b080629490a7" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52946469\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_24822e016b7640ba80b7750d092a336d.setContent(html_e963396814d642628869b080629490a7);
-        
-
-        marker_fb1a4799d8b74a0a9b5298e6e1627a8a.bindPopup(popup_24822e016b7640ba80b7750d092a336d)
-        ;
-
-        
-    
-    
-            var marker_ec620c1e33f645bc960f2a891940c7b1 = L.marker(
-                [42.4477449, -73.2515641],
-                {}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-            var icon_ee7221b635cc478d927624808627ac50 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            );
-            marker_ec620c1e33f645bc960f2a891940c7b1.setIcon(icon_ee7221b635cc478d927624808627ac50);
-        
-    
-        var popup_7a8738c10df147f28b46ec0b1aeb4e80 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_b70990dca5f94123b0a641281e6f05e1 = $(`<div id="html_b70990dca5f94123b0a641281e6f05e1" style="width: 100.0%; height: 100.0%;"> <a href = "javascript: window.parent.location.hash = \'#52950215\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>`)[0];
-            popup_7a8738c10df147f28b46ec0b1aeb4e80.setContent(html_b70990dca5f94123b0a641281e6f05e1);
-        
-
-        marker_ec620c1e33f645bc960f2a891940c7b1.bindPopup(popup_7a8738c10df147f28b46ec0b1aeb4e80)
-        ;
-
-        
-    
-    
-            var circle_marker_5d6dc7066e4148e78615d5bc7d3b675f = L.circleMarker(
-                [42.6344595, -73.1132463],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_27261d359c12416cb6fb58348e80d0d4 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_6d6c9e11899a476da44a11b7e68d1463 = $(`<div id="html_6d6c9e11899a476da44a11b7e68d1463" style="width: 100.0%; height: 100.0%;">Store Number: 13540<br/>Store Address: 155 COLUMBIA ST., ADAMS<br/>Cash Cube:  $79 </div>`)[0];
-            popup_27261d359c12416cb6fb58348e80d0d4.setContent(html_6d6c9e11899a476da44a11b7e68d1463);
-        
-
-        circle_marker_5d6dc7066e4148e78615d5bc7d3b675f.bindPopup(popup_27261d359c12416cb6fb58348e80d0d4)
-        ;
-
-        
-    
-    
-            var circle_marker_7c56b93bd83248a8a709a536fab1ae10 = L.circleMarker(
-                [42.210587200000006, -72.57344140000002],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_f908cc00a8e646be950be8617c099813 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_f877fc89b6e5497e85f063bf807faa0d = $(`<div id="html_f877fc89b6e5497e85f063bf807faa0d" style="width: 100.0%; height: 100.0%;">Store Number: 13774<br/>Store Address: 1956 MEMORIAL DR/RT33, CHICOPEE<br/>Cash Cube:  $621 </div>`)[0];
-            popup_f908cc00a8e646be950be8617c099813.setContent(html_f877fc89b6e5497e85f063bf807faa0d);
-        
-
-        circle_marker_7c56b93bd83248a8a709a536fab1ae10.bindPopup(popup_f908cc00a8e646be950be8617c099813)
-        ;
-
-        
-    
-    
-            var circle_marker_d976c74ad3024406875e4678833cf051 = L.circleMarker(
-                [42.094337599999996, -72.51019029999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_3a3710b04f13448d8300e78fe9ddb904 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_cf3ad2132ad74829ad2d351d4b4a56b4 = $(`<div id="html_cf3ad2132ad74829ad2d351d4b4a56b4" style="width: 100.0%; height: 100.0%;">Store Number: 14404<br/>Store Address: 1504 ALLEN ST, SPRINGFIELD<br/>Cash Cube:  $120 </div>`)[0];
-            popup_3a3710b04f13448d8300e78fe9ddb904.setContent(html_cf3ad2132ad74829ad2d351d4b4a56b4);
-        
-
-        circle_marker_d976c74ad3024406875e4678833cf051.bindPopup(popup_3a3710b04f13448d8300e78fe9ddb904)
-        ;
-
-        
-    
-    
-            var circle_marker_0904c1d678484a47a0fc7de728010220 = L.circleMarker(
-                [42.12415670000001, -73.35728409999999],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_b99d4e22733f4c649d7652baaf65383a = L.popup({"maxWidth": "100%"});
-
-        
-            var html_47702e1609c64ba3975ef196ba82fe85 = $(`<div id="html_47702e1609c64ba3975ef196ba82fe85" style="width: 100.0%; height: 100.0%;">Store Number: 14438<br/>Store Address: 670 NORTH MAIN STREET, SHEFFIELD<br/>Cash Cube:  $225 </div>`)[0];
-            popup_b99d4e22733f4c649d7652baaf65383a.setContent(html_47702e1609c64ba3975ef196ba82fe85);
-        
-
-        circle_marker_0904c1d678484a47a0fc7de728010220.bindPopup(popup_b99d4e22733f4c649d7652baaf65383a)
-        ;
-
-        
-    
-    
-            var circle_marker_cc089eb53aa4432990cd3af9ee7b5006 = L.circleMarker(
-                [42.704931099999996, -73.1885688],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_5b28747e3ef94605a206a0c797477ee6 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_16636da9d1484425b634aa888a845a96 = $(`<div id="html_16636da9d1484425b634aa888a845a96" style="width: 100.0%; height: 100.0%;">Store Number: 14678<br/>Store Address: 384 MAIN ST, WILLIAMSTOWN<br/>Cash Cube:  $287 </div>`)[0];
-            popup_5b28747e3ef94605a206a0c797477ee6.setContent(html_16636da9d1484425b634aa888a845a96);
-        
-
-        circle_marker_cc089eb53aa4432990cd3af9ee7b5006.bindPopup(popup_5b28747e3ef94605a206a0c797477ee6)
-        ;
-
-        
-    
-    
-            var circle_marker_9ba1e3907b714f4d91e5cfcfe3b0f5de = L.circleMarker(
-                [42.14911470000001, -71.50457109999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_74a268c51a3f48228fb60eacc26a270e = L.popup({"maxWidth": "100%"});
-
-        
-            var html_8c5e92c78e1f430da6dad6244658038e = $(`<div id="html_8c5e92c78e1f430da6dad6244658038e" style="width: 100.0%; height: 100.0%;">Store Number: 14682<br/>Store Address: 161 EAST MAIN ST, MILFORD<br/>Cash Cube:  $430 </div>`)[0];
-            popup_74a268c51a3f48228fb60eacc26a270e.setContent(html_8c5e92c78e1f430da6dad6244658038e);
-        
-
-        circle_marker_9ba1e3907b714f4d91e5cfcfe3b0f5de.bindPopup(popup_74a268c51a3f48228fb60eacc26a270e)
-        ;
-
-        
-    
-    
-            var circle_marker_d71bc4cc052445e2b412501c724c2f1a = L.circleMarker(
-                [42.501453399999995, -73.2371417],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_35f5e6b6d3b944f9a01cfddf052f5570 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_53663cc0b9124e8398952f1fd35a0a20 = $(`<div id="html_53663cc0b9124e8398952f1fd35a0a20" style="width: 100.0%; height: 100.0%;">Store Number: 14703<br/>Store Address: 525 SOUTH MAIN STREET, LANESBOROUGH<br/>Cash Cube:  $331 </div>`)[0];
-            popup_35f5e6b6d3b944f9a01cfddf052f5570.setContent(html_53663cc0b9124e8398952f1fd35a0a20);
-        
-
-        circle_marker_d71bc4cc052445e2b412501c724c2f1a.bindPopup(popup_35f5e6b6d3b944f9a01cfddf052f5570)
-        ;
-
-        
-    
-    
-            var circle_marker_1d7ca221667749f2ae68d25ddf5da870 = L.circleMarker(
-                [42.047950799999995, -71.88888359999999],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_08f70be432c94bf69939d5f28dabf00f = L.popup({"maxWidth": "100%"});
-
-        
-            var html_ea8f58fdce0148df84a4e18c7657b746 = $(`<div id="html_ea8f58fdce0148df84a4e18c7657b746" style="width: 100.0%; height: 100.0%;">Store Number: 14714<br/>Store Address: 13 WEST MAIN STREET, DUDLEY<br/>Cash Cube:  $295 </div>`)[0];
-            popup_08f70be432c94bf69939d5f28dabf00f.setContent(html_ea8f58fdce0148df84a4e18c7657b746);
-        
-
-        circle_marker_1d7ca221667749f2ae68d25ddf5da870.bindPopup(popup_08f70be432c94bf69939d5f28dabf00f)
-        ;
-
-        
-    
-    
-            var circle_marker_8ca12ff9cec041bb9322485a0af20823 = L.circleMarker(
-                [42.2188946, -72.1180544],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_870451a2820045e8b1666a946cb782ad = L.popup({"maxWidth": "100%"});
-
-        
-            var html_734d70840571493ebeec78fabebf1c59 = $(`<div id="html_734d70840571493ebeec78fabebf1c59" style="width: 100.0%; height: 100.0%;">Store Number: 14721<br/>Store Address: 54 W. MAIN STREET, BROOKFIELD<br/>Cash Cube:  $322 </div>`)[0];
-            popup_870451a2820045e8b1666a946cb782ad.setContent(html_734d70840571493ebeec78fabebf1c59);
-        
-
-        circle_marker_8ca12ff9cec041bb9322485a0af20823.bindPopup(popup_870451a2820045e8b1666a946cb782ad)
-        ;
-
-        
-    
-    
-            var circle_marker_7a397830e77c465a9d9ccfd80175a09a = L.circleMarker(
-                [42.3399188, -71.78927409999999],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_fe9a347f9ad943aea46fb5c99508ce10 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_a7e8103db6954f5ab610e3c66ea94438 = $(`<div id="html_a7e8103db6954f5ab610e3c66ea94438" style="width: 100.0%; height: 100.0%;">Store Number: 14950<br/>Store Address: 342 WEST BOYLSTON STREET, WEST BOYLSTON<br/>Cash Cube:  $237 </div>`)[0];
-            popup_fe9a347f9ad943aea46fb5c99508ce10.setContent(html_a7e8103db6954f5ab610e3c66ea94438);
-        
-
-        circle_marker_7a397830e77c465a9d9ccfd80175a09a.bindPopup(popup_fe9a347f9ad943aea46fb5c99508ce10)
-        ;
-
-        
-    
-    
-            var circle_marker_144d7c4542834505a6a4b5aa533cb00f = L.circleMarker(
-                [42.60334279999999, -72.5909995],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_d64e610be75846988a5dce6ff80ee14b = L.popup({"maxWidth": "100%"});
-
-        
-            var html_6e3daf8fab624d9fa1975199550b7275 = $(`<div id="html_6e3daf8fab624d9fa1975199550b7275" style="width: 100.0%; height: 100.0%;">Store Number: 14956<br/>Store Address: 369 FEDERAL ST, GREENFIELD<br/>Cash Cube:  $160 </div>`)[0];
-            popup_d64e610be75846988a5dce6ff80ee14b.setContent(html_6e3daf8fab624d9fa1975199550b7275);
-        
-
-        circle_marker_144d7c4542834505a6a4b5aa533cb00f.bindPopup(popup_d64e610be75846988a5dce6ff80ee14b)
-        ;
-
-        
-    
-    
-            var circle_marker_792f59ec204c4569897809c74f28fc86 = L.circleMarker(
-                [42.558208, -71.8737629],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_7439f9b3257c47fc8d2f620807908b10 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_d3d46b5053374798b9cae87af1c6df38 = $(`<div id="html_d3d46b5053374798b9cae87af1c6df38" style="width: 100.0%; height: 100.0%;">Store Number: 15103<br/>Store Address: 164 STATE ROAD EAST, WESTMINSTER<br/>Cash Cube:  $415 </div>`)[0];
-            popup_7439f9b3257c47fc8d2f620807908b10.setContent(html_d3d46b5053374798b9cae87af1c6df38);
-        
-
-        circle_marker_792f59ec204c4569897809c74f28fc86.bindPopup(popup_7439f9b3257c47fc8d2f620807908b10)
-        ;
-
-        
-    
-    
-            var circle_marker_32897ccf190840709e9be12596105ee5 = L.circleMarker(
-                [42.4308523, -73.3186872],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_ad8ae45f5457437f9dfedfce3120fe7a = L.popup({"maxWidth": "100%"});
-
-        
-            var html_6f464ed5d478449db91d10dcc747aeeb = $(`<div id="html_6f464ed5d478449db91d10dcc747aeeb" style="width: 100.0%; height: 100.0%;">Store Number: 15167<br/>Store Address: 2 CALLAHAN DR., PITTSFIELD<br/>Cash Cube:  $11 </div>`)[0];
-            popup_ad8ae45f5457437f9dfedfce3120fe7a.setContent(html_6f464ed5d478449db91d10dcc747aeeb);
-        
-
-        circle_marker_32897ccf190840709e9be12596105ee5.bindPopup(popup_ad8ae45f5457437f9dfedfce3120fe7a)
-        ;
-
-        
-    
-    
-            var circle_marker_104dc877378c4876aebfc8f54524c162 = L.circleMarker(
-                [42.0886819, -72.6298079],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_5831fcdb62654f5cade2b717e339cb96 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_d658da2d9f70420787d30b24ef4b950d = $(`<div id="html_d658da2d9f70420787d30b24ef4b950d" style="width: 100.0%; height: 100.0%;">Store Number: 15284<br/>Store Address: 53 SPRINGFIELD STREET, AGAWAM<br/>Cash Cube:  $634 </div>`)[0];
-            popup_5831fcdb62654f5cade2b717e339cb96.setContent(html_d658da2d9f70420787d30b24ef4b950d);
-        
-
-        circle_marker_104dc877378c4876aebfc8f54524c162.bindPopup(popup_5831fcdb62654f5cade2b717e339cb96)
-        ;
-
-        
-    
-    
-            var circle_marker_059a59fe79d8428fb53cff8c6f8761cc = L.circleMarker(
-                [42.190204, -72.6396015],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+                var bounds = null;
+            
+
+            var map_9c71441f83cb4678b04c7d39bf6da969 = L.map(
+                                  'map_9c71441f83cb4678b04c7d39bf6da969',
+                                  {center: [42.062939799999995,-71.718067],
+                                  zoom: 7,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_8a3062ef66fd4cd49cdfe9d567cfc394 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+        
     
-        var popup_415a130a5e2e4143acb7ca54a58d7031 = L.popup({"maxWidth": "100%"});
 
-        
-            var html_1c9b1eae1cad4f48905d09e20027910d = $(`<div id="html_1c9b1eae1cad4f48905d09e20027910d" style="width: 100.0%; height: 100.0%;">Store Number: 15341<br/>Store Address: 250 WESTFIELD RD, HOLYOKE<br/>Cash Cube:  $507 </div>`)[0];
-            popup_415a130a5e2e4143acb7ca54a58d7031.setContent(html_1c9b1eae1cad4f48905d09e20027910d);
-        
-
-        circle_marker_059a59fe79d8428fb53cff8c6f8761cc.bindPopup(popup_415a130a5e2e4143acb7ca54a58d7031)
-        ;
-
-        
-    
-    
-            var circle_marker_47956dac52f741aaaaefc00056416cae = L.circleMarker(
-                [41.910783200000004, -70.80138659999999],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_1d4a5b7fd643429a94c961a7bae31141 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_1202608dfe9d4ea28e68d6ee2bc6ac66 = $(`<div id="html_1202608dfe9d4ea28e68d6ee2bc6ac66" style="width: 100.0%; height: 100.0%;">Store Number: 15352<br/>Store Address: 44 NORTH MAIN STREET, CARVER<br/>Cash Cube:  $252 </div>`)[0];
-            popup_1d4a5b7fd643429a94c961a7bae31141.setContent(html_1202608dfe9d4ea28e68d6ee2bc6ac66);
-        
-
-        circle_marker_47956dac52f741aaaaefc00056416cae.bindPopup(popup_1d4a5b7fd643429a94c961a7bae31141)
-        ;
-
-        
-    
-    
-            var circle_marker_2eee678dd7c54d039b6e792c0c6f8d8d = L.circleMarker(
-                [41.753184600000004, -70.636597],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_99e1d1d0ff654b7c80971aa2a76af1e4 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_7a6a5f549e8d4c64ad0ce0fc2462959c = $(`<div id="html_7a6a5f549e8d4c64ad0ce0fc2462959c" style="width: 100.0%; height: 100.0%;">Store Number: 15503<br/>Store Address: 3137 CRANBERRY HWY, EAST WAREHAM<br/>Cash Cube:  $612 </div>`)[0];
-            popup_99e1d1d0ff654b7c80971aa2a76af1e4.setContent(html_7a6a5f549e8d4c64ad0ce0fc2462959c);
-        
+            var marker_8e1025dfe03444b3bd2d16321260429c = L.marker(
+                [42.7045296,-71.14437649999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
 
-        circle_marker_2eee678dd7c54d039b6e792c0c6f8d8d.bindPopup(popup_99e1d1d0ff654b7c80971aa2a76af1e4)
-        ;
-
-        
-    
-    
-            var circle_marker_828e970ddf724731ab496f9ee1effc6c = L.circleMarker(
-                [41.691063, -70.9418161],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+                var icon_2a15ee6aead4402f8a3ff1a001f87601 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8e1025dfe03444b3bd2d16321260429c.setIcon(icon_2a15ee6aead4402f8a3ff1a001f87601);
+            
+    
+            var popup_25e61895c93d489894dd7c0ee60eb77c = L.popup({maxWidth: '300'});
+
+            
+                var html_5588f5c956844198a6c2f6882f4ac95e = $('<div id="html_5588f5c956844198a6c2f6882f4ac95e" style="width: 100.0%; height: 100.0%;">State Rank: 8<br/> <a href = "javascript: window.parent.location.hash = \'#51663015\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_25e61895c93d489894dd7c0ee60eb77c.setContent(html_5588f5c956844198a6c2f6882f4ac95e);
+            
+
+            marker_8e1025dfe03444b3bd2d16321260429c.bindPopup(popup_25e61895c93d489894dd7c0ee60eb77c);
+
+            
         
     
-        var popup_1422c1dc74c64b93bd8c92f60ff03bc1 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_13355b58614a4563944e22136cd923de = $(`<div id="html_13355b58614a4563944e22136cd923de" style="width: 100.0%; height: 100.0%;">Store Number: 15668<br/>Store Address: 893 CHURCH STREET, NEW BEDFORD<br/>Cash Cube:  $929 </div>`)[0];
-            popup_1422c1dc74c64b93bd8c92f60ff03bc1.setContent(html_13355b58614a4563944e22136cd923de);
-        
-
-        circle_marker_828e970ddf724731ab496f9ee1effc6c.bindPopup(popup_1422c1dc74c64b93bd8c92f60ff03bc1)
-        ;
 
-        
-    
+            var marker_6f0d3fbc20424ed0b4fa6dbb4ff86ef3 = L.marker(
+                [42.291316200000004,-71.06356590000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-            var circle_marker_c708aa3349754d8e884701fc14b2a3e4 = L.circleMarker(
-                [42.678875500000004, -71.3624433],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_1680a9cf614d41fab9533a2065d054c6 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_3e81b6c5190d47e092efbd672b66bb94 = $(`<div id="html_3e81b6c5190d47e092efbd672b66bb94" style="width: 100.0%; height: 100.0%;">Store Number: 15726<br/>Store Address: 450 NASHUA RD., DRACUT<br/>Cash Cube:  $1,108 </div>`)[0];
-            popup_1680a9cf614d41fab9533a2065d054c6.setContent(html_3e81b6c5190d47e092efbd672b66bb94);
-        
-
-        circle_marker_c708aa3349754d8e884701fc14b2a3e4.bindPopup(popup_1680a9cf614d41fab9533a2065d054c6)
-        ;
 
-        
-    
-    
-            var circle_marker_2d136c20cf8a49aca03fbc9287bbc645 = L.circleMarker(
-                [42.566070399999994, -73.16282149999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_77133ec3c0c24c21b623546bc0f5911e = L.popup({"maxWidth": "100%"});
+                var icon_0f7d0443747e493a9c34f8129adb6945 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f0d3fbc20424ed0b4fa6dbb4ff86ef3.setIcon(icon_0f7d0443747e493a9c34f8129adb6945);
+            
+    
+            var popup_db6dff9b9e004e75a9e3e9ebdbfef5fa = L.popup({maxWidth: '300'});
 
-        
-            var html_f505d744f30b40d79ab8ec81a8d5ff1c = $(`<div id="html_f505d744f30b40d79ab8ec81a8d5ff1c" style="width: 100.0%; height: 100.0%;">Store Number: 17051<br/>Store Address: 236 NORTH ST, CHESHIRE<br/>Cash Cube:  $300 </div>`)[0];
-            popup_77133ec3c0c24c21b623546bc0f5911e.setContent(html_f505d744f30b40d79ab8ec81a8d5ff1c);
-        
+            
+                var html_ba21d1f213e74da0833cbf9840dc9446 = $('<div id="html_ba21d1f213e74da0833cbf9840dc9446" style="width: 100.0%; height: 100.0%;">State Rank: 3<br/> <a href = "javascript: window.parent.location.hash = \'#51969201\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_db6dff9b9e004e75a9e3e9ebdbfef5fa.setContent(html_ba21d1f213e74da0833cbf9840dc9446);
+            
 
-        circle_marker_2d136c20cf8a49aca03fbc9287bbc645.bindPopup(popup_77133ec3c0c24c21b623546bc0f5911e)
-        ;
+            marker_6f0d3fbc20424ed0b4fa6dbb4ff86ef3.bindPopup(popup_db6dff9b9e004e75a9e3e9ebdbfef5fa);
 
-        
-    
-    
-            var circle_marker_6d2b8473999f4a708b4b9102f34e112e = L.circleMarker(
-                [41.650259999999996, -70.2409255],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_bc8d4cc8197240c39a3e2ed479baa699 = L.popup({"maxWidth": "100%"});
 
-        
-            var html_7ad8dedad7564ca0a15aefc87ec4fc09 = $(`<div id="html_7ad8dedad7564ca0a15aefc87ec4fc09" style="width: 100.0%; height: 100.0%;">Store Number: 17767<br/>Store Address: 447 ROUTE 28, WEST YARMOUTH<br/>Cash Cube:  $1,251 </div>`)[0];
-            popup_bc8d4cc8197240c39a3e2ed479baa699.setContent(html_7ad8dedad7564ca0a15aefc87ec4fc09);
-        
-
-        circle_marker_6d2b8473999f4a708b4b9102f34e112e.bindPopup(popup_bc8d4cc8197240c39a3e2ed479baa699)
-        ;
-
-        
-    
-    
-            var circle_marker_7b30d5a4c2e84108a93f47e3117d94a2 = L.circleMarker(
-                [42.15196810000001, -72.3160123],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+            var marker_254ceb0a843c42ac92ab8b8a339f675f = L.marker(
+                [42.1212216,-72.7495704],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-        var popup_54766cccefc546ce8061890c0b5847e6 = L.popup({"maxWidth": "100%"});
 
-        
-            var html_3467d21c7c03480fb6bc5d0ef6c7f24f = $(`<div id="html_3467d21c7c03480fb6bc5d0ef6c7f24f" style="width: 100.0%; height: 100.0%;">Store Number: 17777<br/>Store Address: 2 BRECKENRIDGE STREET, PALMER<br/>Cash Cube:  $1,075 </div>`)[0];
-            popup_54766cccefc546ce8061890c0b5847e6.setContent(html_3467d21c7c03480fb6bc5d0ef6c7f24f);
-        
-
-        circle_marker_7b30d5a4c2e84108a93f47e3117d94a2.bindPopup(popup_54766cccefc546ce8061890c0b5847e6)
-        ;
-
-        
-    
-    
-            var circle_marker_21e7cbbdb57f419e900e0a0b1b39f283 = L.circleMarker(
-                [42.2858869, -72.0694553],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+                var icon_cc05671129cd434d846abcdcb7ddfcf4 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_254ceb0a843c42ac92ab8b8a339f675f.setIcon(icon_cc05671129cd434d846abcdcb7ddfcf4);
+            
     
-        var popup_06c16abd4d544f4e8ccf1cd6b4700a01 = L.popup({"maxWidth": "100%"});
+            var popup_57dfa3432ce04078884ceab9d90b82e6 = L.popup({maxWidth: '300'});
 
-        
-            var html_9f7bc02c07c04c09916b614d432c4cce = $(`<div id="html_9f7bc02c07c04c09916b614d432c4cce" style="width: 100.0%; height: 100.0%;">Store Number: 18273<br/>Store Address: 2 OAKHAM RD, NORTH BROOKFIELD<br/>Cash Cube:  $528 </div>`)[0];
-            popup_06c16abd4d544f4e8ccf1cd6b4700a01.setContent(html_9f7bc02c07c04c09916b614d432c4cce);
-        
+            
+                var html_0e862ec756cd4b4e9aecdb3d6bcca34d = $('<div id="html_0e862ec756cd4b4e9aecdb3d6bcca34d" style="width: 100.0%; height: 100.0%;">State Rank: 9<br/> <a href = "javascript: window.parent.location.hash = \'#51977263\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_57dfa3432ce04078884ceab9d90b82e6.setContent(html_0e862ec756cd4b4e9aecdb3d6bcca34d);
+            
 
-        circle_marker_21e7cbbdb57f419e900e0a0b1b39f283.bindPopup(popup_06c16abd4d544f4e8ccf1cd6b4700a01)
-        ;
+            marker_254ceb0a843c42ac92ab8b8a339f675f.bindPopup(popup_57dfa3432ce04078884ceab9d90b82e6);
 
-        
-    
-    
-            var circle_marker_8b294468c84043ee9290b1efc190894e = L.circleMarker(
-                [42.1604956, -72.7255562],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_96ae8a4a12d3488eb55ed7a6b22a1011 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_4cb039af5375481c98dafc4631f82ef3 = $(`<div id="html_4cb039af5375481c98dafc4631f82ef3" style="width: 100.0%; height: 100.0%;">Store Number: 18908<br/>Store Address: 617 SOUTHAMPTON RD, WESTFIELD<br/>Cash Cube:  $155 </div>`)[0];
-            popup_96ae8a4a12d3488eb55ed7a6b22a1011.setContent(html_4cb039af5375481c98dafc4631f82ef3);
-        
 
-        circle_marker_8b294468c84043ee9290b1efc190894e.bindPopup(popup_96ae8a4a12d3488eb55ed7a6b22a1011)
-        ;
-
-        
-    
-    
-            var circle_marker_40f2f11749eb4e848480187b76a58566 = L.circleMarker(
-                [42.13671799999999, -72.57094659999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+            var marker_16cc8bb7caa048f0b956f3d1fd033ddd = L.marker(
+                [42.27911629999999,-71.40880809999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-        var popup_3c725de377ce4b129a4e0c1a9d1d9103 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_fae86e76903c47d8b5c96df1bd92e890 = $(`<div id="html_fae86e76903c47d8b5c96df1bd92e890" style="width: 100.0%; height: 100.0%;">Store Number: 19004<br/>Store Address: 1070 SAINT JAMES AVE, SPRINGFIELD<br/>Cash Cube:  $33 </div>`)[0];
-            popup_3c725de377ce4b129a4e0c1a9d1d9103.setContent(html_fae86e76903c47d8b5c96df1bd92e890);
-        
 
-        circle_marker_40f2f11749eb4e848480187b76a58566.bindPopup(popup_3c725de377ce4b129a4e0c1a9d1d9103)
-        ;
-
-        
-    
-    
-            var circle_marker_f6a82bc3977d4b18aa455c75fe958232 = L.circleMarker(
-                [42.255645, -71.12345239999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+                var icon_530650476e12471b9b7d9185f4c17636 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_16cc8bb7caa048f0b956f3d1fd033ddd.setIcon(icon_530650476e12471b9b7d9185f4c17636);
+            
     
-        var popup_d6224a20a90c46d8ae1a1e973efea6e4 = L.popup({"maxWidth": "100%"});
+            var popup_ac7ac6bdbd0b49f397e2273eecf01e96 = L.popup({maxWidth: '300'});
 
-        
-            var html_565cfddd898d4552be4b76daa46f3e9c = $(`<div id="html_565cfddd898d4552be4b76daa46f3e9c" style="width: 100.0%; height: 100.0%;">Store Number: 19113<br/>Store Address: 1248 RIVER ST, BOSTON<br/>Cash Cube:  $310 </div>`)[0];
-            popup_d6224a20a90c46d8ae1a1e973efea6e4.setContent(html_565cfddd898d4552be4b76daa46f3e9c);
-        
+            
+                var html_4cef64271c4f4fe89597763ebc1a94fa = $('<div id="html_4cef64271c4f4fe89597763ebc1a94fa" style="width: 100.0%; height: 100.0%;">State Rank: 1<br/> <a href = "javascript: window.parent.location.hash = \'#51994177\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_ac7ac6bdbd0b49f397e2273eecf01e96.setContent(html_4cef64271c4f4fe89597763ebc1a94fa);
+            
 
-        circle_marker_f6a82bc3977d4b18aa455c75fe958232.bindPopup(popup_d6224a20a90c46d8ae1a1e973efea6e4)
-        ;
+            marker_16cc8bb7caa048f0b956f3d1fd033ddd.bindPopup(popup_ac7ac6bdbd0b49f397e2273eecf01e96);
 
-        
-    
-    
-            var circle_marker_b4c464e156384afc98e0fad2b619f0b6 = L.circleMarker(
-                [42.075392, -71.04413620000003],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_6391b77a8c8c4d278b40e16e5b28a666 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_4fbad3ee3b744a388e52c9bdca5fc638 = $(`<div id="html_4fbad3ee3b744a388e52c9bdca5fc638" style="width: 100.0%; height: 100.0%;">Store Number: 19114<br/>Store Address: 21 TORRY ST, BROCKTON<br/>Cash Cube:  $202 </div>`)[0];
-            popup_6391b77a8c8c4d278b40e16e5b28a666.setContent(html_4fbad3ee3b744a388e52c9bdca5fc638);
-        
-
-        circle_marker_b4c464e156384afc98e0fad2b619f0b6.bindPopup(popup_6391b77a8c8c4d278b40e16e5b28a666)
-        ;
 
-        
-    
+            var marker_890bf747b3a6422eb430a22abb54b27c = L.marker(
+                [42.7741839,-71.08234689999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-            var circle_marker_f144d91b44404e1da6700933dff3614b = L.circleMarker(
-                [42.372770300000006, -71.0942204],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_4c409adefa0a4e6495b6591f03056532 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_dfef30bd8cac4bb894766f5bdfa508b8 = $(`<div id="html_dfef30bd8cac4bb894766f5bdfa508b8" style="width: 100.0%; height: 100.0%;">Store Number: 19115<br/>Store Address: 1030 CAMBRIDGE ST, CAMBRIDGE<br/>Cash Cube:  $281 </div>`)[0];
-            popup_4c409adefa0a4e6495b6591f03056532.setContent(html_dfef30bd8cac4bb894766f5bdfa508b8);
-        
-
-        circle_marker_f144d91b44404e1da6700933dff3614b.bindPopup(popup_4c409adefa0a4e6495b6591f03056532)
-        ;
 
-        
-    
+                var icon_e52ae36db3b64646a0b834c0069004af = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_890bf747b3a6422eb430a22abb54b27c.setIcon(icon_e52ae36db3b64646a0b834c0069004af);
+            
     
-            var circle_marker_094978fc6dce44b5a17a11e8d71ec454 = L.circleMarker(
-                [42.401606799999996, -71.0240545],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_6c1bb2d1c3f1439cbd71b2f29d3516ca = L.popup({"maxWidth": "100%"});
+            var popup_6cc9a8a0d72448128211c77cb8f7bd6e = L.popup({maxWidth: '300'});
 
-        
-            var html_1f7a53db23284d6f97bfbfd27644730e = $(`<div id="html_1f7a53db23284d6f97bfbfd27644730e" style="width: 100.0%; height: 100.0%;">Store Number: 19116<br/>Store Address: 121 WEBSTER AVE, CHELSEA<br/>Cash Cube:  $730 </div>`)[0];
-            popup_6c1bb2d1c3f1439cbd71b2f29d3516ca.setContent(html_1f7a53db23284d6f97bfbfd27644730e);
-        
+            
+                var html_bcb9f115a56046cfb7f4a4833c9d89ea = $('<div id="html_bcb9f115a56046cfb7f4a4833c9d89ea" style="width: 100.0%; height: 100.0%;">State Rank: 10<br/> <a href = "javascript: window.parent.location.hash = \'#52392811\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_6cc9a8a0d72448128211c77cb8f7bd6e.setContent(html_bcb9f115a56046cfb7f4a4833c9d89ea);
+            
 
-        circle_marker_094978fc6dce44b5a17a11e8d71ec454.bindPopup(popup_6c1bb2d1c3f1439cbd71b2f29d3516ca)
-        ;
+            marker_890bf747b3a6422eb430a22abb54b27c.bindPopup(popup_6cc9a8a0d72448128211c77cb8f7bd6e);
 
+            
         
     
-    
-            var circle_marker_fd61f497a7eb4c1a9151bdc7592ca3ae = L.circleMarker(
-                [42.2991393, -71.0625909],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_b945b49c38d5484aa062a537b9eff6b8 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_70e7acfcdd664ba2b0f7bc1894c582cf = $(`<div id="html_70e7acfcdd664ba2b0f7bc1894c582cf" style="width: 100.0%; height: 100.0%;">Store Number: 19117<br/>Store Address: 500 GENEVA AVE, DORCHESTER<br/>Cash Cube:  $59 </div>`)[0];
-            popup_b945b49c38d5484aa062a537b9eff6b8.setContent(html_70e7acfcdd664ba2b0f7bc1894c582cf);
-        
 
-        circle_marker_fd61f497a7eb4c1a9151bdc7592ca3ae.bindPopup(popup_b945b49c38d5484aa062a537b9eff6b8)
-        ;
-
-        
+            var marker_468c040e53e8480fa280a4bf551f97d7 = L.marker(
+                [42.3408,-71.08178099999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-    
-            var circle_marker_e3b3962aa9424f0296e23575212dff48 = L.circleMarker(
-                [42.2775858, -71.4079503],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_995f5ef20348473abdea85f2835e9dbe = L.popup({"maxWidth": "100%"});
-
-        
-            var html_170c9c4ac023417a952c4be5f0002840 = $(`<div id="html_170c9c4ac023417a952c4be5f0002840" style="width: 100.0%; height: 100.0%;">Store Number: 19118<br/>Store Address: 208 WAVERLY ST, FRAMINGHAM<br/>Cash Cube:  $458 </div>`)[0];
-            popup_995f5ef20348473abdea85f2835e9dbe.setContent(html_170c9c4ac023417a952c4be5f0002840);
-        
 
-        circle_marker_e3b3962aa9424f0296e23575212dff48.bindPopup(popup_995f5ef20348473abdea85f2835e9dbe)
-        ;
-
-        
+                var icon_2b6712e26b2e4e40b6f68f53c270e4ec = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_468c040e53e8480fa280a4bf551f97d7.setIcon(icon_2b6712e26b2e4e40b6f68f53c270e4ec);
+            
     
-    
-            var circle_marker_30d7b2740c2e42089a1eb245382c2ab9 = L.circleMarker(
-                [42.616971, -70.6681038],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_2fb23392c9b9492689e030a61abd4165 = L.popup({"maxWidth": "100%"});
+            var popup_cd15da7c451c4d91bb9b162cf205f3ab = L.popup({maxWidth: '300'});
 
-        
-            var html_a84078887109400a960f8a9b9e09a486 = $(`<div id="html_a84078887109400a960f8a9b9e09a486" style="width: 100.0%; height: 100.0%;">Store Number: 19119<br/>Store Address: 143 WASHINGTON ST, GLOUCESTER<br/>Cash Cube:  $476 </div>`)[0];
-            popup_2fb23392c9b9492689e030a61abd4165.setContent(html_a84078887109400a960f8a9b9e09a486);
-        
+            
+                var html_f8b896a8734d4c349da9c11e31b69cbf = $('<div id="html_f8b896a8734d4c349da9c11e31b69cbf" style="width: 100.0%; height: 100.0%;">State Rank: 5<br/> <a href = "javascript: window.parent.location.hash = \'#52504493\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_cd15da7c451c4d91bb9b162cf205f3ab.setContent(html_f8b896a8734d4c349da9c11e31b69cbf);
+            
 
-        circle_marker_30d7b2740c2e42089a1eb245382c2ab9.bindPopup(popup_2fb23392c9b9492689e030a61abd4165)
-        ;
+            marker_468c040e53e8480fa280a4bf551f97d7.bindPopup(popup_cd15da7c451c4d91bb9b162cf205f3ab);
 
-        
-    
-    
-            var circle_marker_ba072f6638cd4568a93ee8046b7b768d = L.circleMarker(
-                [42.5865662, -72.624449],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_6f18da24a7ea4c6f97fd16418ea444bc = L.popup({"maxWidth": "100%"});
-
-        
-            var html_1188336478984b8cbeee65f4aecb49ce = $(`<div id="html_1188336478984b8cbeee65f4aecb49ce" style="width: 100.0%; height: 100.0%;">Store Number: 19120<br/>Store Address: 10 COLRAIN RD, GREENFIELD<br/>Cash Cube:  $347 </div>`)[0];
-            popup_6f18da24a7ea4c6f97fd16418ea444bc.setContent(html_1188336478984b8cbeee65f4aecb49ce);
-        
-
-        circle_marker_ba072f6638cd4568a93ee8046b7b768d.bindPopup(popup_6f18da24a7ea4c6f97fd16418ea444bc)
-        ;
 
-        
-    
-    
-            var circle_marker_6e4d7cadd53546cbaa2c067366d3d49b = L.circleMarker(
-                [42.1844203, -72.63299549999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+            var marker_9a730fc50b6345c78f0c667475b31f2b = L.marker(
+                [42.7958144,-71.04709919999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-        var popup_862b456b7ef843cbbfa96a8adab7f678 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_f462921a7711409f99edfeefee6f819b = $(`<div id="html_f462921a7711409f99edfeefee6f819b" style="width: 100.0%; height: 100.0%;">Store Number: 19121<br/>Store Address: 2261 NORTHAMPTON ST, HOLYOKE<br/>Cash Cube:  $322 </div>`)[0];
-            popup_862b456b7ef843cbbfa96a8adab7f678.setContent(html_f462921a7711409f99edfeefee6f819b);
-        
-
-        circle_marker_6e4d7cadd53546cbaa2c067366d3d49b.bindPopup(popup_862b456b7ef843cbbfa96a8adab7f678)
-        ;
 
-        
-    
-    
-            var circle_marker_504a06a72b124953ac9037d82b111205 = L.circleMarker(
-                [42.6412841, -71.3058204],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+                var icon_302b24a1cd2d4b7090cd6e31e5ddaac6 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9a730fc50b6345c78f0c667475b31f2b.setIcon(icon_302b24a1cd2d4b7090cd6e31e5ddaac6);
+            
     
-        var popup_499d41287c114f66bf2eb31c3791fb76 = L.popup({"maxWidth": "100%"});
+            var popup_35e230da90a043ae91de0d1dd781c934 = L.popup({maxWidth: '300'});
 
-        
-            var html_ac0653333a6640eaa34e282181965dce = $(`<div id="html_ac0653333a6640eaa34e282181965dce" style="width: 100.0%; height: 100.0%;">Store Number: 19122<br/>Store Address: 125 CHURCH ST, LOWELL<br/>Cash Cube:  $57 </div>`)[0];
-            popup_499d41287c114f66bf2eb31c3791fb76.setContent(html_ac0653333a6640eaa34e282181965dce);
-        
+            
+                var html_303afd2f5927482fa408ed9a225229c1 = $('<div id="html_303afd2f5927482fa408ed9a225229c1" style="width: 100.0%; height: 100.0%;">State Rank: 12<br/> <a href = "javascript: window.parent.location.hash = \'#52514009\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_35e230da90a043ae91de0d1dd781c934.setContent(html_303afd2f5927482fa408ed9a225229c1);
+            
 
-        circle_marker_504a06a72b124953ac9037d82b111205.bindPopup(popup_499d41287c114f66bf2eb31c3791fb76)
-        ;
+            marker_9a730fc50b6345c78f0c667475b31f2b.bindPopup(popup_35e230da90a043ae91de0d1dd781c934);
 
-        
-    
-    
-            var circle_marker_50e191f96b344b388942523aba906300 = L.circleMarker(
-                [42.422545899999996, -71.08947210000002],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_b723484402f5434280dc15a7dcc7ffba = L.popup({"maxWidth": "100%"});
-
-        
-            var html_5b7b8f0603744d22953398a56d4833a2 = $(`<div id="html_5b7b8f0603744d22953398a56d4833a2" style="width: 100.0%; height: 100.0%;">Store Number: 19123<br/>Store Address: 469 SALEM ST STE 71, MEDFORD<br/>Cash Cube:  $53 </div>`)[0];
-            popup_b723484402f5434280dc15a7dcc7ffba.setContent(html_5b7b8f0603744d22953398a56d4833a2);
-        
 
-        circle_marker_50e191f96b344b388942523aba906300.bindPopup(popup_b723484402f5434280dc15a7dcc7ffba)
-        ;
-
-        
-    
-    
-            var circle_marker_416f3a29215b4b0081c0c28f96ff4f72 = L.circleMarker(
-                [42.7014833, -73.1115865],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+            var marker_66fa58e473a84ca084224d5edfc46fd4 = L.marker(
+                [42.37623019999999,-72.52090820000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-        var popup_5f84f97addc243db86aebc08f5fb9865 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_af0058847b2842f2933e99ab3b1a2ef5 = $(`<div id="html_af0058847b2842f2933e99ab3b1a2ef5" style="width: 100.0%; height: 100.0%;">Store Number: 19124<br/>Store Address: 69 VETERANS MEMORIAL DR, NORTH ADAMS<br/>Cash Cube:  $127 </div>`)[0];
-            popup_5f84f97addc243db86aebc08f5fb9865.setContent(html_af0058847b2842f2933e99ab3b1a2ef5);
-        
 
-        circle_marker_416f3a29215b4b0081c0c28f96ff4f72.bindPopup(popup_5f84f97addc243db86aebc08f5fb9865)
-        ;
-
-        
-    
-    
-            var circle_marker_75bee168c91a43c7880ae1b4ae2c2439 = L.circleMarker(
-                [41.6771115, -70.94038119999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+                var icon_b40196fde86a455b9fcfbbf9c1160009 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_66fa58e473a84ca084224d5edfc46fd4.setIcon(icon_b40196fde86a455b9fcfbbf9c1160009);
+            
     
-        var popup_5873fd13ee5b4d1f8e8e8835bec21867 = L.popup({"maxWidth": "100%"});
+            var popup_acc5a24668704367a991f6fa22a103bc = L.popup({maxWidth: '300'});
 
-        
-            var html_e202e494740a4a769e9d9acadb233f1b = $(`<div id="html_e202e494740a4a769e9d9acadb233f1b" style="width: 100.0%; height: 100.0%;">Store Number: 19125<br/>Store Address: 1000 KINGS HWY, NEW BEDFORD<br/>Cash Cube:  $643 </div>`)[0];
-            popup_5873fd13ee5b4d1f8e8e8835bec21867.setContent(html_e202e494740a4a769e9d9acadb233f1b);
-        
+            
+                var html_6d647d8f8b8743419ec171c5d18745b2 = $('<div id="html_6d647d8f8b8743419ec171c5d18745b2" style="width: 100.0%; height: 100.0%;">State Rank: 11<br/> <a href = "javascript: window.parent.location.hash = \'#52854431\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_acc5a24668704367a991f6fa22a103bc.setContent(html_6d647d8f8b8743419ec171c5d18745b2);
+            
 
-        circle_marker_75bee168c91a43c7880ae1b4ae2c2439.bindPopup(popup_5873fd13ee5b4d1f8e8e8835bec21867)
-        ;
+            marker_66fa58e473a84ca084224d5edfc46fd4.bindPopup(popup_acc5a24668704367a991f6fa22a103bc);
 
-        
-    
-    
-            var circle_marker_1c783d5696754f378bb37d4a861b8533 = L.circleMarker(
-                [42.168344399999995, -71.0465268],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_c99b05a314e2406ebe49052041d08c72 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_2b8805dcac924f97963f929c208b013b = $(`<div id="html_2b8805dcac924f97963f929c208b013b" style="width: 100.0%; height: 100.0%;">Store Number: 19126<br/>Store Address: 340 N MAIN ST, RANDOLPH<br/>Cash Cube:  $447 </div>`)[0];
-            popup_c99b05a314e2406ebe49052041d08c72.setContent(html_2b8805dcac924f97963f929c208b013b);
-        
-
-        circle_marker_1c783d5696754f378bb37d4a861b8533.bindPopup(popup_c99b05a314e2406ebe49052041d08c72)
-        ;
 
-        
-    
+            var marker_7b140642db0b4453b7171ff023c4e34f = L.marker(
+                [42.352233500000004,-71.06663],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-            var circle_marker_e1240fc7584a4f369b3f534551af6ee0 = L.circleMarker(
-                [42.42763859999999, -71.0123156],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_b5d762bf346049ff85c35e8632bcf1c6 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_22cea2666f75436a8e83f03c5fa01813 = $(`<div id="html_22cea2666f75436a8e83f03c5fa01813" style="width: 100.0%; height: 100.0%;">Store Number: 19127<br/>Store Address: 339 SQUIRE RD, REVERE<br/>Cash Cube:  $104 </div>`)[0];
-            popup_b5d762bf346049ff85c35e8632bcf1c6.setContent(html_22cea2666f75436a8e83f03c5fa01813);
-        
-
-        circle_marker_e1240fc7584a4f369b3f534551af6ee0.bindPopup(popup_b5d762bf346049ff85c35e8632bcf1c6)
-        ;
 
-        
-    
+                var icon_54a7cfb93d5b417d8d1397524fd5b039 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b140642db0b4453b7171ff023c4e34f.setIcon(icon_54a7cfb93d5b417d8d1397524fd5b039);
+            
     
-            var circle_marker_bfe44051f39842f98c77c5f9c326bd68 = L.circleMarker(
-                [42.1385791, -72.51909619999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_00b54f06e9df4aef9ad529250ec193f1 = L.popup({"maxWidth": "100%"});
+            var popup_7986cdc52e9845b699338cf300e05dd8 = L.popup({maxWidth: '300'});
 
-        
-            var html_2579de15ecf34ce286d3a3ec8abd97cc = $(`<div id="html_2579de15ecf34ce286d3a3ec8abd97cc" style="width: 100.0%; height: 100.0%;">Store Number: 19128<br/>Store Address: 786 BOSTON RD, SPRINGFIELD<br/>Cash Cube:  $352 </div>`)[0];
-            popup_00b54f06e9df4aef9ad529250ec193f1.setContent(html_2579de15ecf34ce286d3a3ec8abd97cc);
-        
+            
+                var html_901e5a307bf94b78be3ab95441f37930 = $('<div id="html_901e5a307bf94b78be3ab95441f37930" style="width: 100.0%; height: 100.0%;">State Rank: 2<br/> <a href = "javascript: window.parent.location.hash = \'#52886327\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_7986cdc52e9845b699338cf300e05dd8.setContent(html_901e5a307bf94b78be3ab95441f37930);
+            
 
-        circle_marker_bfe44051f39842f98c77c5f9c326bd68.bindPopup(popup_00b54f06e9df4aef9ad529250ec193f1)
-        ;
+            marker_7b140642db0b4453b7171ff023c4e34f.bindPopup(popup_7986cdc52e9845b699338cf300e05dd8);
 
+            
         
     
-    
-            var circle_marker_bea401422e7148ba822689dcdc840aa3 = L.circleMarker(
-                [42.093886, -72.60706440000001],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_5ef898f6f1ad49e8b0553747828fbf86 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_484cc8c4988f4710b8df9a09edc36a71 = $(`<div id="html_484cc8c4988f4710b8df9a09edc36a71" style="width: 100.0%; height: 100.0%;">Store Number: 19129<br/>Store Address: 1150 UNION ST, WEST SPRINGFIELD<br/>Cash Cube:  $150 </div>`)[0];
-            popup_5ef898f6f1ad49e8b0553747828fbf86.setContent(html_484cc8c4988f4710b8df9a09edc36a71);
-        
 
-        circle_marker_bea401422e7148ba822689dcdc840aa3.bindPopup(popup_5ef898f6f1ad49e8b0553747828fbf86)
-        ;
-
-        
+            var marker_c4e34229b1a74d07934cb3c37f39b7d7 = L.marker(
+                [42.35305049999999,-71.061089],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-    
-            var circle_marker_528097a20e374e7186f9b66ade324d63 = L.circleMarker(
-                [42.245514299999996, -71.8302179],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_0b2e51ccb01840e6b6390fcf7182ddbf = L.popup({"maxWidth": "100%"});
-
-        
-            var html_bbbca85cf65449c4af756b2aea8e8b1e = $(`<div id="html_bbbca85cf65449c4af756b2aea8e8b1e" style="width: 100.0%; height: 100.0%;">Store Number: 19130<br/>Store Address: 1049 MAIN ST, WORCESTER<br/>Cash Cube:  $666 </div>`)[0];
-            popup_0b2e51ccb01840e6b6390fcf7182ddbf.setContent(html_bbbca85cf65449c4af756b2aea8e8b1e);
-        
 
-        circle_marker_528097a20e374e7186f9b66ade324d63.bindPopup(popup_0b2e51ccb01840e6b6390fcf7182ddbf)
-        ;
-
-        
+                var icon_7b7057c7e11d40d283c5b58ef8690057 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c4e34229b1a74d07934cb3c37f39b7d7.setIcon(icon_7b7057c7e11d40d283c5b58ef8690057);
+            
     
-    
-            var circle_marker_a268de6afe3e48a8b69e72b6dd8d5137 = L.circleMarker(
-                [42.2362663, -72.5814233],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_2c20e2ae2d60434ba3e6226d894f1212 = L.popup({"maxWidth": "100%"});
+            var popup_c7ecd2f1743d4f2da69d1278742dbb48 = L.popup({maxWidth: '300'});
 
-        
-            var html_1a7046af04964ce792720d5a07b031d2 = $(`<div id="html_1a7046af04964ce792720d5a07b031d2" style="width: 100.0%; height: 100.0%;">Store Number: 19923<br/>Store Address: 501 NEWTON ST, SOUTH HADLEY<br/>Cash Cube:  $217 </div>`)[0];
-            popup_2c20e2ae2d60434ba3e6226d894f1212.setContent(html_1a7046af04964ce792720d5a07b031d2);
-        
+            
+                var html_e7a07928a3aa4efc8641d5c0c9c3696d = $('<div id="html_e7a07928a3aa4efc8641d5c0c9c3696d" style="width: 100.0%; height: 100.0%;">State Rank: 6<br/> <a href = "javascript: window.parent.location.hash = \'#52922309\'; void(0)"> View App </a><br/>Has required Keyword: False<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_c7ecd2f1743d4f2da69d1278742dbb48.setContent(html_e7a07928a3aa4efc8641d5c0c9c3696d);
+            
 
-        circle_marker_a268de6afe3e48a8b69e72b6dd8d5137.bindPopup(popup_2c20e2ae2d60434ba3e6226d894f1212)
-        ;
+            marker_c4e34229b1a74d07934cb3c37f39b7d7.bindPopup(popup_c7ecd2f1743d4f2da69d1278742dbb48);
 
-        
-    
-    
-            var circle_marker_b3e6f0754e634abbbf76d6a09b088398 = L.circleMarker(
-                [42.669196, -72.53560949999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_15a726ef55a2471e840544a4585e1a53 = L.popup({"maxWidth": "100%"});
 
-        
-            var html_794a3282fabb4abc88cde29ac9381a79 = $(`<div id="html_794a3282fabb4abc88cde29ac9381a79" style="width: 100.0%; height: 100.0%;">Store Number: 20134<br/>Store Address: 115 NORTHFIELD RD, BERNARDSTON<br/>Cash Cube: $0</div>`)[0];
-            popup_15a726ef55a2471e840544a4585e1a53.setContent(html_794a3282fabb4abc88cde29ac9381a79);
-        
-
-        circle_marker_b3e6f0754e634abbbf76d6a09b088398.bindPopup(popup_15a726ef55a2471e840544a4585e1a53)
-        ;
-
-        
-    
-    
-            var circle_marker_02dafa75ddca42129ff1132f31662651 = L.circleMarker(
-                [41.8890968, -71.33911669999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+            var marker_0ce4a6ca1ea845909af87d37ba09e26d = L.marker(
+                [41.9459266,-71.2870033],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-        var popup_f08059a11ff54fd38f089cac73e927cd = L.popup({"maxWidth": "100%"});
 
-        
-            var html_1b1f19ca15f14e1c8b0b3008b84d5062 = $(`<div id="html_1b1f19ca15f14e1c8b0b3008b84d5062" style="width: 100.0%; height: 100.0%;">Store Number: 20343<br/>Store Address: 17 CENTRAL AVE, SEEKONK<br/>Cash Cube: $0</div>`)[0];
-            popup_f08059a11ff54fd38f089cac73e927cd.setContent(html_1b1f19ca15f14e1c8b0b3008b84d5062);
-        
-
-        circle_marker_02dafa75ddca42129ff1132f31662651.bindPopup(popup_f08059a11ff54fd38f089cac73e927cd)
-        ;
-
-        
-    
-    
-            var circle_marker_80c790778f354a1cb3a084fa8141c873 = L.circleMarker(
-                [42.0284776, -71.22718809999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+                var icon_464e3465ad234e5591dbbec8495eacb4 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0ce4a6ca1ea845909af87d37ba09e26d.setIcon(icon_464e3465ad234e5591dbbec8495eacb4);
+            
     
-        var popup_b61905d404b54d36a7b681897e07fb1d = L.popup({"maxWidth": "100%"});
+            var popup_3476751c5d6b41649bbaef291672c9c5 = L.popup({maxWidth: '300'});
 
-        
-            var html_de69b88e88e0436c9f84029d00e64eb4 = $(`<div id="html_de69b88e88e0436c9f84029d00e64eb4" style="width: 100.0%; height: 100.0%;">Store Number: 20417<br/>Store Address: 65 COPELAND DR, MANSFIELD<br/>Cash Cube:  $-   </div>`)[0];
-            popup_b61905d404b54d36a7b681897e07fb1d.setContent(html_de69b88e88e0436c9f84029d00e64eb4);
-        
+            
+                var html_7eb6e3d2183a41f4a23455643ea4d6f3 = $('<div id="html_7eb6e3d2183a41f4a23455643ea4d6f3" style="width: 100.0%; height: 100.0%;">State Rank: 4<br/> <a href = "javascript: window.parent.location.hash = \'#52946469\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_3476751c5d6b41649bbaef291672c9c5.setContent(html_7eb6e3d2183a41f4a23455643ea4d6f3);
+            
 
-        circle_marker_80c790778f354a1cb3a084fa8141c873.bindPopup(popup_b61905d404b54d36a7b681897e07fb1d)
-        ;
+            marker_0ce4a6ca1ea845909af87d37ba09e26d.bindPopup(popup_3476751c5d6b41649bbaef291672c9c5);
 
-        
-    
-    
-            var circle_marker_645a4e7acf8640f281b5acd45324d109 = L.circleMarker(
-                [41.601911799999996, -70.93991199999998],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
+            
         
     
-        var popup_d6663340975e4a9abf0ca170b3c50ee4 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_8e819bf692514ce0b89d104b405fcfb6 = $(`<div id="html_8e819bf692514ce0b89d104b405fcfb6" style="width: 100.0%; height: 100.0%;">Store Number: 20509<br/>Store Address: 696 DARTMOUTH ST, SOUTH DARTMOUTH<br/>Cash Cube: $0</div>`)[0];
-            popup_d6663340975e4a9abf0ca170b3c50ee4.setContent(html_8e819bf692514ce0b89d104b405fcfb6);
-        
 
-        circle_marker_645a4e7acf8640f281b5acd45324d109.bindPopup(popup_d6663340975e4a9abf0ca170b3c50ee4)
-        ;
-
-        
-    
-    
-            var circle_marker_2091927e74794202835a9ee685fe3567 = L.circleMarker(
-                [41.8247116, -71.34337590000001],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
+            var marker_609ec6d28abf4686988ad4cb7a1fc45d = L.marker(
+                [42.4477449,-73.2515641],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
     
-        var popup_e2387db40c8b4c2f9c995e761b8e25e0 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_8e89d85d3a6c45d69f44238a0205e4d7 = $(`<div id="html_8e89d85d3a6c45d69f44238a0205e4d7" style="width: 100.0%; height: 100.0%;">Store Number: 20530<br/>Store Address: 96 TAUNTON AVE, SEEKONK<br/>Cash Cube: $0</div>`)[0];
-            popup_e2387db40c8b4c2f9c995e761b8e25e0.setContent(html_8e89d85d3a6c45d69f44238a0205e4d7);
-        
 
-        circle_marker_2091927e74794202835a9ee685fe3567.bindPopup(popup_e2387db40c8b4c2f9c995e761b8e25e0)
-        ;
+                var icon_43cdf8d793ff4e33b1a7595d8c1e1b39 = L.AwesomeMarkers.icon({
+                    icon: 'bolt',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_609ec6d28abf4686988ad4cb7a1fc45d.setIcon(icon_43cdf8d793ff4e33b1a7595d8c1e1b39);
+            
+    
+            var popup_4da66970deb543a4866e859ae982324c = L.popup({maxWidth: '300'});
+
+            
+                var html_6ce6e449554e462ca5191c83528efc4b = $('<div id="html_6ce6e449554e462ca5191c83528efc4b" style="width: 100.0%; height: 100.0%;">State Rank: 7<br/> <a href = "javascript: window.parent.location.hash = \'#52950215\'; void(0)"> View App </a><br/>Has required Keyword: True<br/>Store within 20 miles: True<br/>Has national ID: True</div>')[0];
+                popup_4da66970deb543a4866e859ae982324c.setContent(html_6ce6e449554e462ca5191c83528efc4b);
+            
+
+            marker_609ec6d28abf4686988ad4cb7a1fc45d.bindPopup(popup_4da66970deb543a4866e859ae982324c);
 
+            
         
     
-    
-            var circle_marker_baeec2d5e3ca4e0b84333ce216e7c730 = L.circleMarker(
-                [41.9697606, -71.335025],
-                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
-            ).addTo(map_192ce58ea3ce4635bd04d573b2dddc19);
-        
-    
-        var popup_b4a8285736af40eb876558026d8a8a15 = L.popup({"maxWidth": "100%"});
-
+            var circle_marker_ff7aaedc1e2147f7853a222aeae45a2a = L.circleMarker(
+                [42.6344595,-73.1132463],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_88ea75e18ef846d3b0c6c99ccdf7ceec = L.popup({maxWidth: '300'});
+
+            
+                var html_37ea1d6e7df540f38fbfa7553d0d1cfe = $('<div id="html_37ea1d6e7df540f38fbfa7553d0d1cfe" style="width: 100.0%; height: 100.0%;">Store Number: 13540<br/>Store Address: 155 COLUMBIA ST., ADAMS<br/>Cash Cube:  $79 </div>')[0];
+                popup_88ea75e18ef846d3b0c6c99ccdf7ceec.setContent(html_37ea1d6e7df540f38fbfa7553d0d1cfe);
+            
+
+            circle_marker_ff7aaedc1e2147f7853a222aeae45a2a.bindPopup(popup_88ea75e18ef846d3b0c6c99ccdf7ceec);
+
+            
+        
+    
+            var circle_marker_a9a3489dabd84260b4dc27f8e96703ea = L.circleMarker(
+                [42.210587200000006,-72.57344140000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_df2245536e6e45b8ada4c8c6f7f60b8e = L.popup({maxWidth: '300'});
+
+            
+                var html_0a3552e25f9a4101aaf15fc430eb7b49 = $('<div id="html_0a3552e25f9a4101aaf15fc430eb7b49" style="width: 100.0%; height: 100.0%;">Store Number: 13774<br/>Store Address: 1956 MEMORIAL DR/RT33, CHICOPEE<br/>Cash Cube:  $621 </div>')[0];
+                popup_df2245536e6e45b8ada4c8c6f7f60b8e.setContent(html_0a3552e25f9a4101aaf15fc430eb7b49);
+            
+
+            circle_marker_a9a3489dabd84260b4dc27f8e96703ea.bindPopup(popup_df2245536e6e45b8ada4c8c6f7f60b8e);
+
+            
+        
+    
+            var circle_marker_84e42d1e9e1141aa813bf539e6f77b87 = L.circleMarker(
+                [42.094337599999996,-72.51019029999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_586c20fed2ff4526ad1311de0c5fd2e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_c08ff9135a984b048f4edca43197bae6 = $('<div id="html_c08ff9135a984b048f4edca43197bae6" style="width: 100.0%; height: 100.0%;">Store Number: 14404<br/>Store Address: 1504 ALLEN ST, SPRINGFIELD<br/>Cash Cube:  $120 </div>')[0];
+                popup_586c20fed2ff4526ad1311de0c5fd2e0.setContent(html_c08ff9135a984b048f4edca43197bae6);
+            
+
+            circle_marker_84e42d1e9e1141aa813bf539e6f77b87.bindPopup(popup_586c20fed2ff4526ad1311de0c5fd2e0);
+
+            
+        
+    
+            var circle_marker_0ad029b80c7c45be8b892532c02db1db = L.circleMarker(
+                [42.12415670000001,-73.35728409999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_4552f87d17ae4104b82eeb5d1afee24f = L.popup({maxWidth: '300'});
+
+            
+                var html_30d92b1ed1bb4577a1733dc9581bfc19 = $('<div id="html_30d92b1ed1bb4577a1733dc9581bfc19" style="width: 100.0%; height: 100.0%;">Store Number: 14438<br/>Store Address: 670 NORTH MAIN STREET, SHEFFIELD<br/>Cash Cube:  $225 </div>')[0];
+                popup_4552f87d17ae4104b82eeb5d1afee24f.setContent(html_30d92b1ed1bb4577a1733dc9581bfc19);
+            
+
+            circle_marker_0ad029b80c7c45be8b892532c02db1db.bindPopup(popup_4552f87d17ae4104b82eeb5d1afee24f);
+
+            
+        
+    
+            var circle_marker_e2b645f14b014ff79a0a56f948220a65 = L.circleMarker(
+                [42.704931099999996,-73.1885688],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_469c59b88c4449e98571744f9061f41e = L.popup({maxWidth: '300'});
+
+            
+                var html_880680534ab349f7aaf825e39e5be561 = $('<div id="html_880680534ab349f7aaf825e39e5be561" style="width: 100.0%; height: 100.0%;">Store Number: 14678<br/>Store Address: 384 MAIN ST, WILLIAMSTOWN<br/>Cash Cube:  $287 </div>')[0];
+                popup_469c59b88c4449e98571744f9061f41e.setContent(html_880680534ab349f7aaf825e39e5be561);
+            
+
+            circle_marker_e2b645f14b014ff79a0a56f948220a65.bindPopup(popup_469c59b88c4449e98571744f9061f41e);
+
+            
+        
+    
+            var circle_marker_5d2933238bf94721b3e0c29bfce70d18 = L.circleMarker(
+                [42.14911470000001,-71.50457109999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_a9cfc9a8dcb14ba9b9afc622f2193d64 = L.popup({maxWidth: '300'});
+
+            
+                var html_ff82b1f6288a459997433412340212f7 = $('<div id="html_ff82b1f6288a459997433412340212f7" style="width: 100.0%; height: 100.0%;">Store Number: 14682<br/>Store Address: 161 EAST MAIN ST, MILFORD<br/>Cash Cube:  $430 </div>')[0];
+                popup_a9cfc9a8dcb14ba9b9afc622f2193d64.setContent(html_ff82b1f6288a459997433412340212f7);
+            
+
+            circle_marker_5d2933238bf94721b3e0c29bfce70d18.bindPopup(popup_a9cfc9a8dcb14ba9b9afc622f2193d64);
+
+            
+        
+    
+            var circle_marker_25aa4f5df9784cdca23c2cc7e9b1baba = L.circleMarker(
+                [42.501453399999995,-73.2371417],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_8c11b3f7cb1b43cb8979957b55342b3d = L.popup({maxWidth: '300'});
+
+            
+                var html_887eeca02f2645d48ea059a473eb3223 = $('<div id="html_887eeca02f2645d48ea059a473eb3223" style="width: 100.0%; height: 100.0%;">Store Number: 14703<br/>Store Address: 525 SOUTH MAIN STREET, LANESBOROUGH<br/>Cash Cube:  $331 </div>')[0];
+                popup_8c11b3f7cb1b43cb8979957b55342b3d.setContent(html_887eeca02f2645d48ea059a473eb3223);
+            
+
+            circle_marker_25aa4f5df9784cdca23c2cc7e9b1baba.bindPopup(popup_8c11b3f7cb1b43cb8979957b55342b3d);
+
+            
+        
+    
+            var circle_marker_c37d2afcb9b64e00a573a25cc96228e1 = L.circleMarker(
+                [42.047950799999995,-71.88888359999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_f6c4ffad77fe428aa7666b04e91d22ab = L.popup({maxWidth: '300'});
+
+            
+                var html_e4c0d923380d48be97af5afc02aa8b31 = $('<div id="html_e4c0d923380d48be97af5afc02aa8b31" style="width: 100.0%; height: 100.0%;">Store Number: 14714<br/>Store Address: 13 WEST MAIN STREET, DUDLEY<br/>Cash Cube:  $295 </div>')[0];
+                popup_f6c4ffad77fe428aa7666b04e91d22ab.setContent(html_e4c0d923380d48be97af5afc02aa8b31);
+            
+
+            circle_marker_c37d2afcb9b64e00a573a25cc96228e1.bindPopup(popup_f6c4ffad77fe428aa7666b04e91d22ab);
+
+            
+        
+    
+            var circle_marker_19ce8c771aa640adbf0eb02d707ec563 = L.circleMarker(
+                [42.2188946,-72.1180544],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_92a35530336d4615a09df10bfc9dd88e = L.popup({maxWidth: '300'});
+
+            
+                var html_73b39a8e7fcc44589470eae2ec3fe903 = $('<div id="html_73b39a8e7fcc44589470eae2ec3fe903" style="width: 100.0%; height: 100.0%;">Store Number: 14721<br/>Store Address: 54 W. MAIN STREET, BROOKFIELD<br/>Cash Cube:  $322 </div>')[0];
+                popup_92a35530336d4615a09df10bfc9dd88e.setContent(html_73b39a8e7fcc44589470eae2ec3fe903);
+            
+
+            circle_marker_19ce8c771aa640adbf0eb02d707ec563.bindPopup(popup_92a35530336d4615a09df10bfc9dd88e);
+
+            
+        
+    
+            var circle_marker_429ba203334644ff9aea5149a6b1dce0 = L.circleMarker(
+                [42.3399188,-71.78927409999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_b169626c6e334cae89a3280ffb918007 = L.popup({maxWidth: '300'});
+
+            
+                var html_24992ac169614a878886f7aa46be9afe = $('<div id="html_24992ac169614a878886f7aa46be9afe" style="width: 100.0%; height: 100.0%;">Store Number: 14950<br/>Store Address: 342 WEST BOYLSTON STREET, WEST BOYLSTON<br/>Cash Cube:  $237 </div>')[0];
+                popup_b169626c6e334cae89a3280ffb918007.setContent(html_24992ac169614a878886f7aa46be9afe);
+            
+
+            circle_marker_429ba203334644ff9aea5149a6b1dce0.bindPopup(popup_b169626c6e334cae89a3280ffb918007);
+
+            
+        
+    
+            var circle_marker_1786b51dfab042738c837327a4bfd74e = L.circleMarker(
+                [42.60334279999999,-72.5909995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_b4f0bc73ff5c4e0e8669723c5e86843a = L.popup({maxWidth: '300'});
+
+            
+                var html_da21a661660b4beebe89bdd0c8902dee = $('<div id="html_da21a661660b4beebe89bdd0c8902dee" style="width: 100.0%; height: 100.0%;">Store Number: 14956<br/>Store Address: 369 FEDERAL ST, GREENFIELD<br/>Cash Cube:  $160 </div>')[0];
+                popup_b4f0bc73ff5c4e0e8669723c5e86843a.setContent(html_da21a661660b4beebe89bdd0c8902dee);
+            
+
+            circle_marker_1786b51dfab042738c837327a4bfd74e.bindPopup(popup_b4f0bc73ff5c4e0e8669723c5e86843a);
+
+            
+        
+    
+            var circle_marker_012bdbd302d94ad58e33c91830967499 = L.circleMarker(
+                [42.558208,-71.8737629],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_d1ec83b1777f445bbb481de3e2ce2215 = L.popup({maxWidth: '300'});
+
+            
+                var html_a05a3c34960247cca9baf13e7b03634f = $('<div id="html_a05a3c34960247cca9baf13e7b03634f" style="width: 100.0%; height: 100.0%;">Store Number: 15103<br/>Store Address: 164 STATE ROAD EAST, WESTMINSTER<br/>Cash Cube:  $415 </div>')[0];
+                popup_d1ec83b1777f445bbb481de3e2ce2215.setContent(html_a05a3c34960247cca9baf13e7b03634f);
+            
+
+            circle_marker_012bdbd302d94ad58e33c91830967499.bindPopup(popup_d1ec83b1777f445bbb481de3e2ce2215);
+
+            
+        
+    
+            var circle_marker_dadddba005334142808d49e68d2fa589 = L.circleMarker(
+                [42.4308523,-73.3186872],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_52d70b5cd6514618997e6731b8f19e1c = L.popup({maxWidth: '300'});
+
+            
+                var html_f2ba50947457471fbfb1bfa37cb1d953 = $('<div id="html_f2ba50947457471fbfb1bfa37cb1d953" style="width: 100.0%; height: 100.0%;">Store Number: 15167<br/>Store Address: 2 CALLAHAN DR., PITTSFIELD<br/>Cash Cube:  $11 </div>')[0];
+                popup_52d70b5cd6514618997e6731b8f19e1c.setContent(html_f2ba50947457471fbfb1bfa37cb1d953);
+            
+
+            circle_marker_dadddba005334142808d49e68d2fa589.bindPopup(popup_52d70b5cd6514618997e6731b8f19e1c);
+
+            
+        
+    
+            var circle_marker_cdbb57ed9f2344369796233716bfa200 = L.circleMarker(
+                [42.0886819,-72.6298079],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_964a9047b5cf41ee8118479896e4f85a = L.popup({maxWidth: '300'});
+
+            
+                var html_0c974ec1da3c45219f2ff3d4a29eb649 = $('<div id="html_0c974ec1da3c45219f2ff3d4a29eb649" style="width: 100.0%; height: 100.0%;">Store Number: 15284<br/>Store Address: 53 SPRINGFIELD STREET, AGAWAM<br/>Cash Cube:  $634 </div>')[0];
+                popup_964a9047b5cf41ee8118479896e4f85a.setContent(html_0c974ec1da3c45219f2ff3d4a29eb649);
+            
+
+            circle_marker_cdbb57ed9f2344369796233716bfa200.bindPopup(popup_964a9047b5cf41ee8118479896e4f85a);
+
+            
+        
+    
+            var circle_marker_a62b00a1f0c047fc92d080f8db376d52 = L.circleMarker(
+                [42.190204,-72.6396015],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_19109948fce04425b8c295dfa6fe9cc3 = L.popup({maxWidth: '300'});
+
+            
+                var html_9af0940df0f343a897eceafbaa1145c4 = $('<div id="html_9af0940df0f343a897eceafbaa1145c4" style="width: 100.0%; height: 100.0%;">Store Number: 15341<br/>Store Address: 250 WESTFIELD RD, HOLYOKE<br/>Cash Cube:  $507 </div>')[0];
+                popup_19109948fce04425b8c295dfa6fe9cc3.setContent(html_9af0940df0f343a897eceafbaa1145c4);
+            
+
+            circle_marker_a62b00a1f0c047fc92d080f8db376d52.bindPopup(popup_19109948fce04425b8c295dfa6fe9cc3);
+
+            
+        
+    
+            var circle_marker_914e5eeba58e4f8aaa3477b553616ac3 = L.circleMarker(
+                [41.910783200000004,-70.80138659999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_85d7c94458de4e3a802d7f9740322e2e = L.popup({maxWidth: '300'});
+
+            
+                var html_4f9107958ad141f4865b058cfa771381 = $('<div id="html_4f9107958ad141f4865b058cfa771381" style="width: 100.0%; height: 100.0%;">Store Number: 15352<br/>Store Address: 44 NORTH MAIN STREET, CARVER<br/>Cash Cube:  $252 </div>')[0];
+                popup_85d7c94458de4e3a802d7f9740322e2e.setContent(html_4f9107958ad141f4865b058cfa771381);
+            
+
+            circle_marker_914e5eeba58e4f8aaa3477b553616ac3.bindPopup(popup_85d7c94458de4e3a802d7f9740322e2e);
+
+            
+        
+    
+            var circle_marker_a559462e55df42e6bcfffda0ae6d3798 = L.circleMarker(
+                [41.753184600000004,-70.636597],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_fe3628bc12da44d4a1d71d87c40d484b = L.popup({maxWidth: '300'});
+
+            
+                var html_85432e6428a242ab8a41dd235a9cbf07 = $('<div id="html_85432e6428a242ab8a41dd235a9cbf07" style="width: 100.0%; height: 100.0%;">Store Number: 15503<br/>Store Address: 3137 CRANBERRY HWY, EAST WAREHAM<br/>Cash Cube:  $612 </div>')[0];
+                popup_fe3628bc12da44d4a1d71d87c40d484b.setContent(html_85432e6428a242ab8a41dd235a9cbf07);
+            
+
+            circle_marker_a559462e55df42e6bcfffda0ae6d3798.bindPopup(popup_fe3628bc12da44d4a1d71d87c40d484b);
+
+            
+        
+    
+            var circle_marker_69ab2bd1f1514795b9298f8d449ffa16 = L.circleMarker(
+                [41.691063,-70.9418161],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_33791a89a12045e5bee8600f0b577ff0 = L.popup({maxWidth: '300'});
+
+            
+                var html_58d46296399a452c90fc15c5019d846c = $('<div id="html_58d46296399a452c90fc15c5019d846c" style="width: 100.0%; height: 100.0%;">Store Number: 15668<br/>Store Address: 893 CHURCH STREET, NEW BEDFORD<br/>Cash Cube:  $929 </div>')[0];
+                popup_33791a89a12045e5bee8600f0b577ff0.setContent(html_58d46296399a452c90fc15c5019d846c);
+            
+
+            circle_marker_69ab2bd1f1514795b9298f8d449ffa16.bindPopup(popup_33791a89a12045e5bee8600f0b577ff0);
+
+            
+        
+    
+            var circle_marker_a40ec9f9b4db48b89a11bb9605a929eb = L.circleMarker(
+                [42.678875500000004,-71.3624433],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_82cb83dc7c9e4804b3f108bf3770d6f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_cc3287425f64427bb45ffdf419691999 = $('<div id="html_cc3287425f64427bb45ffdf419691999" style="width: 100.0%; height: 100.0%;">Store Number: 15726<br/>Store Address: 450 NASHUA RD., DRACUT<br/>Cash Cube:  $1,108 </div>')[0];
+                popup_82cb83dc7c9e4804b3f108bf3770d6f3.setContent(html_cc3287425f64427bb45ffdf419691999);
+            
+
+            circle_marker_a40ec9f9b4db48b89a11bb9605a929eb.bindPopup(popup_82cb83dc7c9e4804b3f108bf3770d6f3);
+
+            
+        
+    
+            var circle_marker_36b218c4d8df442393820543bf6cad5a = L.circleMarker(
+                [42.566070399999994,-73.16282149999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_e9f238b341a546e2829d7deedf858ab3 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b78aa8a638f4ccbb57fbf42a5954046 = $('<div id="html_0b78aa8a638f4ccbb57fbf42a5954046" style="width: 100.0%; height: 100.0%;">Store Number: 17051<br/>Store Address: 236 NORTH ST, CHESHIRE<br/>Cash Cube:  $300 </div>')[0];
+                popup_e9f238b341a546e2829d7deedf858ab3.setContent(html_0b78aa8a638f4ccbb57fbf42a5954046);
+            
+
+            circle_marker_36b218c4d8df442393820543bf6cad5a.bindPopup(popup_e9f238b341a546e2829d7deedf858ab3);
+
+            
+        
+    
+            var circle_marker_1aa18cad081b4e85993082187e8b96f9 = L.circleMarker(
+                [41.650259999999996,-70.2409255],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_7876c4faf25f4b7f972b125a08a08374 = L.popup({maxWidth: '300'});
+
+            
+                var html_f234738b768a4623b8866a594cc298a2 = $('<div id="html_f234738b768a4623b8866a594cc298a2" style="width: 100.0%; height: 100.0%;">Store Number: 17767<br/>Store Address: 447 ROUTE 28, WEST YARMOUTH<br/>Cash Cube:  $1,251 </div>')[0];
+                popup_7876c4faf25f4b7f972b125a08a08374.setContent(html_f234738b768a4623b8866a594cc298a2);
+            
+
+            circle_marker_1aa18cad081b4e85993082187e8b96f9.bindPopup(popup_7876c4faf25f4b7f972b125a08a08374);
+
+            
+        
+    
+            var circle_marker_b1ece430cb1f44fe94541e02dae14cba = L.circleMarker(
+                [42.15196810000001,-72.3160123],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_ccbee96ba8584781823a0e3508ee5089 = L.popup({maxWidth: '300'});
+
+            
+                var html_acd9bca54d1a428bacd92ced5ee68854 = $('<div id="html_acd9bca54d1a428bacd92ced5ee68854" style="width: 100.0%; height: 100.0%;">Store Number: 17777<br/>Store Address: 2 BRECKENRIDGE STREET, PALMER<br/>Cash Cube:  $1,075 </div>')[0];
+                popup_ccbee96ba8584781823a0e3508ee5089.setContent(html_acd9bca54d1a428bacd92ced5ee68854);
+            
+
+            circle_marker_b1ece430cb1f44fe94541e02dae14cba.bindPopup(popup_ccbee96ba8584781823a0e3508ee5089);
+
+            
+        
+    
+            var circle_marker_9e6736bb826548578d3f8d505847f2e2 = L.circleMarker(
+                [42.2858869,-72.0694553],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_c5b7b6eb43a24da4af10f6779f828584 = L.popup({maxWidth: '300'});
+
+            
+                var html_86911cbb59904b54bc79a4c62855e22c = $('<div id="html_86911cbb59904b54bc79a4c62855e22c" style="width: 100.0%; height: 100.0%;">Store Number: 18273<br/>Store Address: 2 OAKHAM RD, NORTH BROOKFIELD<br/>Cash Cube:  $528 </div>')[0];
+                popup_c5b7b6eb43a24da4af10f6779f828584.setContent(html_86911cbb59904b54bc79a4c62855e22c);
+            
+
+            circle_marker_9e6736bb826548578d3f8d505847f2e2.bindPopup(popup_c5b7b6eb43a24da4af10f6779f828584);
+
+            
+        
+    
+            var circle_marker_a6f615fa662f41c7acd33aa1ed9b5630 = L.circleMarker(
+                [42.1604956,-72.7255562],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_0e215116a0ac4e2eb9d2fe38d518562d = L.popup({maxWidth: '300'});
+
+            
+                var html_cb2a56cda68d4ff2b4ccb0a2a9a30024 = $('<div id="html_cb2a56cda68d4ff2b4ccb0a2a9a30024" style="width: 100.0%; height: 100.0%;">Store Number: 18908<br/>Store Address: 617 SOUTHAMPTON RD, WESTFIELD<br/>Cash Cube:  $155 </div>')[0];
+                popup_0e215116a0ac4e2eb9d2fe38d518562d.setContent(html_cb2a56cda68d4ff2b4ccb0a2a9a30024);
+            
+
+            circle_marker_a6f615fa662f41c7acd33aa1ed9b5630.bindPopup(popup_0e215116a0ac4e2eb9d2fe38d518562d);
+
+            
+        
+    
+            var circle_marker_8d67599dd06a4cb3a5493ff3185850ed = L.circleMarker(
+                [42.13671799999999,-72.57094659999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_227216ec7ff74f9ba98e12e1f3e050a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_9426101f8b424e5283ad4e1c59a1935a = $('<div id="html_9426101f8b424e5283ad4e1c59a1935a" style="width: 100.0%; height: 100.0%;">Store Number: 19004<br/>Store Address: 1070 SAINT JAMES AVE, SPRINGFIELD<br/>Cash Cube:  $33 </div>')[0];
+                popup_227216ec7ff74f9ba98e12e1f3e050a6.setContent(html_9426101f8b424e5283ad4e1c59a1935a);
+            
+
+            circle_marker_8d67599dd06a4cb3a5493ff3185850ed.bindPopup(popup_227216ec7ff74f9ba98e12e1f3e050a6);
+
+            
+        
+    
+            var circle_marker_0a469b34e20d4d93b2d66ae7d955f23c = L.circleMarker(
+                [42.255645,-71.12345239999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_73273114fd544bc7a60bcb17852ea2df = L.popup({maxWidth: '300'});
+
+            
+                var html_9a20eb17a4e74a3e8c6b678689f22965 = $('<div id="html_9a20eb17a4e74a3e8c6b678689f22965" style="width: 100.0%; height: 100.0%;">Store Number: 19113<br/>Store Address: 1248 RIVER ST, BOSTON<br/>Cash Cube:  $310 </div>')[0];
+                popup_73273114fd544bc7a60bcb17852ea2df.setContent(html_9a20eb17a4e74a3e8c6b678689f22965);
+            
+
+            circle_marker_0a469b34e20d4d93b2d66ae7d955f23c.bindPopup(popup_73273114fd544bc7a60bcb17852ea2df);
+
+            
+        
+    
+            var circle_marker_4e4d3161b2374ce9899add62f056470e = L.circleMarker(
+                [42.075392,-71.04413620000003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_6345869f2f764f86b32a214bcea92d60 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c664e4367f243cc82e95688c4aca12c = $('<div id="html_7c664e4367f243cc82e95688c4aca12c" style="width: 100.0%; height: 100.0%;">Store Number: 19114<br/>Store Address: 21 TORRY ST, BROCKTON<br/>Cash Cube:  $202 </div>')[0];
+                popup_6345869f2f764f86b32a214bcea92d60.setContent(html_7c664e4367f243cc82e95688c4aca12c);
+            
+
+            circle_marker_4e4d3161b2374ce9899add62f056470e.bindPopup(popup_6345869f2f764f86b32a214bcea92d60);
+
+            
+        
+    
+            var circle_marker_c3d23d6ad81342d6bca9b62946d014b7 = L.circleMarker(
+                [42.372770300000006,-71.0942204],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_efb72c1ca268404dbd21239ad2b1774a = L.popup({maxWidth: '300'});
+
+            
+                var html_f3318846b21a4237bed9b512c9c31967 = $('<div id="html_f3318846b21a4237bed9b512c9c31967" style="width: 100.0%; height: 100.0%;">Store Number: 19115<br/>Store Address: 1030 CAMBRIDGE ST, CAMBRIDGE<br/>Cash Cube:  $281 </div>')[0];
+                popup_efb72c1ca268404dbd21239ad2b1774a.setContent(html_f3318846b21a4237bed9b512c9c31967);
+            
+
+            circle_marker_c3d23d6ad81342d6bca9b62946d014b7.bindPopup(popup_efb72c1ca268404dbd21239ad2b1774a);
+
+            
+        
+    
+            var circle_marker_ac2f8726513544c4a2e6fe87e7696ae2 = L.circleMarker(
+                [42.401606799999996,-71.0240545],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_c7407b01bff84529bff30f77f6377d15 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e8a2830aa66462e9b425119bee2311a = $('<div id="html_4e8a2830aa66462e9b425119bee2311a" style="width: 100.0%; height: 100.0%;">Store Number: 19116<br/>Store Address: 121 WEBSTER AVE, CHELSEA<br/>Cash Cube:  $730 </div>')[0];
+                popup_c7407b01bff84529bff30f77f6377d15.setContent(html_4e8a2830aa66462e9b425119bee2311a);
+            
+
+            circle_marker_ac2f8726513544c4a2e6fe87e7696ae2.bindPopup(popup_c7407b01bff84529bff30f77f6377d15);
+
+            
+        
+    
+            var circle_marker_47ae5f688fe849089d5b5731c385e18c = L.circleMarker(
+                [42.2991393,-71.0625909],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_2bf78e0bdfce4eebbf0e4a74aa95b3b7 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ff6a85eb8b7434886efee4ab9bfea94 = $('<div id="html_1ff6a85eb8b7434886efee4ab9bfea94" style="width: 100.0%; height: 100.0%;">Store Number: 19117<br/>Store Address: 500 GENEVA AVE, DORCHESTER<br/>Cash Cube:  $59 </div>')[0];
+                popup_2bf78e0bdfce4eebbf0e4a74aa95b3b7.setContent(html_1ff6a85eb8b7434886efee4ab9bfea94);
+            
+
+            circle_marker_47ae5f688fe849089d5b5731c385e18c.bindPopup(popup_2bf78e0bdfce4eebbf0e4a74aa95b3b7);
+
+            
+        
+    
+            var circle_marker_fb59c221c487499aa7e9e461f9ac0878 = L.circleMarker(
+                [42.2775858,-71.4079503],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_d3add690fc1e448f822e4efcbacd847c = L.popup({maxWidth: '300'});
+
+            
+                var html_6e2ac19ff4e649f9ae288abeb93d4322 = $('<div id="html_6e2ac19ff4e649f9ae288abeb93d4322" style="width: 100.0%; height: 100.0%;">Store Number: 19118<br/>Store Address: 208 WAVERLY ST, FRAMINGHAM<br/>Cash Cube:  $458 </div>')[0];
+                popup_d3add690fc1e448f822e4efcbacd847c.setContent(html_6e2ac19ff4e649f9ae288abeb93d4322);
+            
+
+            circle_marker_fb59c221c487499aa7e9e461f9ac0878.bindPopup(popup_d3add690fc1e448f822e4efcbacd847c);
+
+            
+        
+    
+            var circle_marker_2b5a679972124246af82193744a750ff = L.circleMarker(
+                [42.616971,-70.6681038],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_1984a096770f4ef18eaec6eaf06a7f95 = L.popup({maxWidth: '300'});
+
+            
+                var html_af81cf9eb32347eb8beee3b4f0387869 = $('<div id="html_af81cf9eb32347eb8beee3b4f0387869" style="width: 100.0%; height: 100.0%;">Store Number: 19119<br/>Store Address: 143 WASHINGTON ST, GLOUCESTER<br/>Cash Cube:  $476 </div>')[0];
+                popup_1984a096770f4ef18eaec6eaf06a7f95.setContent(html_af81cf9eb32347eb8beee3b4f0387869);
+            
+
+            circle_marker_2b5a679972124246af82193744a750ff.bindPopup(popup_1984a096770f4ef18eaec6eaf06a7f95);
+
+            
+        
+    
+            var circle_marker_c431debdee2c45f5bdd744f488587bc0 = L.circleMarker(
+                [42.5865662,-72.624449],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_343d840975484aa3949a1d206e55947f = L.popup({maxWidth: '300'});
+
+            
+                var html_8b3414b88295431398bcf32d8ffab726 = $('<div id="html_8b3414b88295431398bcf32d8ffab726" style="width: 100.0%; height: 100.0%;">Store Number: 19120<br/>Store Address: 10 COLRAIN RD, GREENFIELD<br/>Cash Cube:  $347 </div>')[0];
+                popup_343d840975484aa3949a1d206e55947f.setContent(html_8b3414b88295431398bcf32d8ffab726);
+            
+
+            circle_marker_c431debdee2c45f5bdd744f488587bc0.bindPopup(popup_343d840975484aa3949a1d206e55947f);
+
+            
+        
+    
+            var circle_marker_280a8b0ba5e941ad842318e8d040bc38 = L.circleMarker(
+                [42.1844203,-72.63299549999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_ad86091fecdc40b8b25c7d2dc7b1b135 = L.popup({maxWidth: '300'});
+
+            
+                var html_701b6d8dfc32428da1b7ce358ad01654 = $('<div id="html_701b6d8dfc32428da1b7ce358ad01654" style="width: 100.0%; height: 100.0%;">Store Number: 19121<br/>Store Address: 2261 NORTHAMPTON ST, HOLYOKE<br/>Cash Cube:  $322 </div>')[0];
+                popup_ad86091fecdc40b8b25c7d2dc7b1b135.setContent(html_701b6d8dfc32428da1b7ce358ad01654);
+            
+
+            circle_marker_280a8b0ba5e941ad842318e8d040bc38.bindPopup(popup_ad86091fecdc40b8b25c7d2dc7b1b135);
+
+            
+        
+    
+            var circle_marker_688ace85f0144adaa08edc0f12628f20 = L.circleMarker(
+                [42.6412841,-71.3058204],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_654eafb3963a41c0bb6c930549b63ef0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ed66e566c634463180cd52e8601c55bf = $('<div id="html_ed66e566c634463180cd52e8601c55bf" style="width: 100.0%; height: 100.0%;">Store Number: 19122<br/>Store Address: 125 CHURCH ST, LOWELL<br/>Cash Cube:  $57 </div>')[0];
+                popup_654eafb3963a41c0bb6c930549b63ef0.setContent(html_ed66e566c634463180cd52e8601c55bf);
+            
+
+            circle_marker_688ace85f0144adaa08edc0f12628f20.bindPopup(popup_654eafb3963a41c0bb6c930549b63ef0);
+
+            
+        
+    
+            var circle_marker_8df678d5bd2c41bf8513acc1ceab75c4 = L.circleMarker(
+                [42.422545899999996,-71.08947210000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_505effa136864a45a9df294f37792191 = L.popup({maxWidth: '300'});
+
+            
+                var html_3d120d8f568e42fd96161cb449501ecf = $('<div id="html_3d120d8f568e42fd96161cb449501ecf" style="width: 100.0%; height: 100.0%;">Store Number: 19123<br/>Store Address: 469 SALEM ST STE 71, MEDFORD<br/>Cash Cube:  $53 </div>')[0];
+                popup_505effa136864a45a9df294f37792191.setContent(html_3d120d8f568e42fd96161cb449501ecf);
+            
+
+            circle_marker_8df678d5bd2c41bf8513acc1ceab75c4.bindPopup(popup_505effa136864a45a9df294f37792191);
+
+            
+        
+    
+            var circle_marker_6e591e5e67d544c1bb807c033550f8be = L.circleMarker(
+                [42.7014833,-73.1115865],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_e6f654f2926d44db80c1836b2e9fe8c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_3c028d012a5f44da899e86c5237a4b70 = $('<div id="html_3c028d012a5f44da899e86c5237a4b70" style="width: 100.0%; height: 100.0%;">Store Number: 19124<br/>Store Address: 69 VETERANS MEMORIAL DR, NORTH ADAMS<br/>Cash Cube:  $127 </div>')[0];
+                popup_e6f654f2926d44db80c1836b2e9fe8c9.setContent(html_3c028d012a5f44da899e86c5237a4b70);
+            
+
+            circle_marker_6e591e5e67d544c1bb807c033550f8be.bindPopup(popup_e6f654f2926d44db80c1836b2e9fe8c9);
+
+            
+        
+    
+            var circle_marker_b87e1bb815ae4f42b0b7f53c0de868be = L.circleMarker(
+                [41.6771115,-70.94038119999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_9d3cbd38702547d4848c182a95da2510 = L.popup({maxWidth: '300'});
+
+            
+                var html_f40a1e319d3a42508d23c14c7a241888 = $('<div id="html_f40a1e319d3a42508d23c14c7a241888" style="width: 100.0%; height: 100.0%;">Store Number: 19125<br/>Store Address: 1000 KINGS HWY, NEW BEDFORD<br/>Cash Cube:  $643 </div>')[0];
+                popup_9d3cbd38702547d4848c182a95da2510.setContent(html_f40a1e319d3a42508d23c14c7a241888);
+            
+
+            circle_marker_b87e1bb815ae4f42b0b7f53c0de868be.bindPopup(popup_9d3cbd38702547d4848c182a95da2510);
+
+            
+        
+    
+            var circle_marker_8a2df0aa0b2f46f694c809b506601a94 = L.circleMarker(
+                [42.168344399999995,-71.0465268],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_d5b1eabfe3ca43fd8974c63f6fa00ae7 = L.popup({maxWidth: '300'});
+
+            
+                var html_82d2696449a840f59ede3cb6191a3399 = $('<div id="html_82d2696449a840f59ede3cb6191a3399" style="width: 100.0%; height: 100.0%;">Store Number: 19126<br/>Store Address: 340 N MAIN ST, RANDOLPH<br/>Cash Cube:  $447 </div>')[0];
+                popup_d5b1eabfe3ca43fd8974c63f6fa00ae7.setContent(html_82d2696449a840f59ede3cb6191a3399);
+            
+
+            circle_marker_8a2df0aa0b2f46f694c809b506601a94.bindPopup(popup_d5b1eabfe3ca43fd8974c63f6fa00ae7);
+
+            
+        
+    
+            var circle_marker_a0b75145b9ed4fdea2453ad1922ac9b3 = L.circleMarker(
+                [42.42763859999999,-71.0123156],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_242d055c9def4ac7b2a3e52ab8f5870d = L.popup({maxWidth: '300'});
+
+            
+                var html_b2034802ed8a44a6be49c51341fb335e = $('<div id="html_b2034802ed8a44a6be49c51341fb335e" style="width: 100.0%; height: 100.0%;">Store Number: 19127<br/>Store Address: 339 SQUIRE RD, REVERE<br/>Cash Cube:  $104 </div>')[0];
+                popup_242d055c9def4ac7b2a3e52ab8f5870d.setContent(html_b2034802ed8a44a6be49c51341fb335e);
+            
+
+            circle_marker_a0b75145b9ed4fdea2453ad1922ac9b3.bindPopup(popup_242d055c9def4ac7b2a3e52ab8f5870d);
+
+            
+        
+    
+            var circle_marker_053e06b27123466a950c7195541bf559 = L.circleMarker(
+                [42.1385791,-72.51909619999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_1b663137014946a790bcf7ae0a8c28af = L.popup({maxWidth: '300'});
+
+            
+                var html_d8997675999f48d1aff5ac0376dfcd44 = $('<div id="html_d8997675999f48d1aff5ac0376dfcd44" style="width: 100.0%; height: 100.0%;">Store Number: 19128<br/>Store Address: 786 BOSTON RD, SPRINGFIELD<br/>Cash Cube:  $352 </div>')[0];
+                popup_1b663137014946a790bcf7ae0a8c28af.setContent(html_d8997675999f48d1aff5ac0376dfcd44);
+            
+
+            circle_marker_053e06b27123466a950c7195541bf559.bindPopup(popup_1b663137014946a790bcf7ae0a8c28af);
+
+            
+        
+    
+            var circle_marker_af223a7cc49b4bee8c9c700d0011f37e = L.circleMarker(
+                [42.093886,-72.60706440000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_a96975ace41f495abe8b0ad1fad0f982 = L.popup({maxWidth: '300'});
+
+            
+                var html_50e3c4f00d6549fe99524bde54032b4e = $('<div id="html_50e3c4f00d6549fe99524bde54032b4e" style="width: 100.0%; height: 100.0%;">Store Number: 19129<br/>Store Address: 1150 UNION ST, WEST SPRINGFIELD<br/>Cash Cube:  $150 </div>')[0];
+                popup_a96975ace41f495abe8b0ad1fad0f982.setContent(html_50e3c4f00d6549fe99524bde54032b4e);
+            
+
+            circle_marker_af223a7cc49b4bee8c9c700d0011f37e.bindPopup(popup_a96975ace41f495abe8b0ad1fad0f982);
+
+            
+        
+    
+            var circle_marker_3c4af71dda504df28c08d679362c2559 = L.circleMarker(
+                [42.245514299999996,-71.8302179],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_99ff3a540b074b78b49205b02bc9125c = L.popup({maxWidth: '300'});
+
+            
+                var html_7d46bff344ee4c54814e255a7958aba4 = $('<div id="html_7d46bff344ee4c54814e255a7958aba4" style="width: 100.0%; height: 100.0%;">Store Number: 19130<br/>Store Address: 1049 MAIN ST, WORCESTER<br/>Cash Cube:  $666 </div>')[0];
+                popup_99ff3a540b074b78b49205b02bc9125c.setContent(html_7d46bff344ee4c54814e255a7958aba4);
+            
+
+            circle_marker_3c4af71dda504df28c08d679362c2559.bindPopup(popup_99ff3a540b074b78b49205b02bc9125c);
+
+            
+        
+    
+            var circle_marker_66abda620b0246ccaa74dcc81fd6f781 = L.circleMarker(
+                [42.2362663,-72.5814233],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_377435fff3704f59870697a0638381a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_805e304b89744c6d8d895bab10143969 = $('<div id="html_805e304b89744c6d8d895bab10143969" style="width: 100.0%; height: 100.0%;">Store Number: 19923<br/>Store Address: 501 NEWTON ST, SOUTH HADLEY<br/>Cash Cube:  $217 </div>')[0];
+                popup_377435fff3704f59870697a0638381a3.setContent(html_805e304b89744c6d8d895bab10143969);
+            
+
+            circle_marker_66abda620b0246ccaa74dcc81fd6f781.bindPopup(popup_377435fff3704f59870697a0638381a3);
+
+            
+        
+    
+            var circle_marker_1abcd0913fd14c019b3df85e5cfc00f1 = L.circleMarker(
+                [42.669196,-72.53560949999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_323c1abd7d4e4909827ce8c71be212ce = L.popup({maxWidth: '300'});
+
+            
+                var html_48c8ec341528428191d480be10418d6a = $('<div id="html_48c8ec341528428191d480be10418d6a" style="width: 100.0%; height: 100.0%;">Store Number: 20134<br/>Store Address: 115 NORTHFIELD RD, BERNARDSTON<br/>Cash Cube: $0</div>')[0];
+                popup_323c1abd7d4e4909827ce8c71be212ce.setContent(html_48c8ec341528428191d480be10418d6a);
+            
+
+            circle_marker_1abcd0913fd14c019b3df85e5cfc00f1.bindPopup(popup_323c1abd7d4e4909827ce8c71be212ce);
+
+            
+        
+    
+            var circle_marker_a4b9af705d6b4c12aa60da3c054d4c28 = L.circleMarker(
+                [41.8890968,-71.33911669999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_c4c6f2e939b04f5f95b3dc609a0d4589 = L.popup({maxWidth: '300'});
+
+            
+                var html_9b03ebe49d1e4f46850c14cd68737a9e = $('<div id="html_9b03ebe49d1e4f46850c14cd68737a9e" style="width: 100.0%; height: 100.0%;">Store Number: 20343<br/>Store Address: 17 CENTRAL AVE, SEEKONK<br/>Cash Cube: $0</div>')[0];
+                popup_c4c6f2e939b04f5f95b3dc609a0d4589.setContent(html_9b03ebe49d1e4f46850c14cd68737a9e);
+            
+
+            circle_marker_a4b9af705d6b4c12aa60da3c054d4c28.bindPopup(popup_c4c6f2e939b04f5f95b3dc609a0d4589);
+
+            
+        
+    
+            var circle_marker_e7558b4f2e5048b6acd64100709efc47 = L.circleMarker(
+                [42.0284776,-71.22718809999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_f4e55f23a0e34a89a390d5bde6ea0994 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5d57d67a3804ecba11fb30cafe3ad80 = $('<div id="html_a5d57d67a3804ecba11fb30cafe3ad80" style="width: 100.0%; height: 100.0%;">Store Number: 20417<br/>Store Address: 65 COPELAND DR, MANSFIELD<br/>Cash Cube:  $-   </div>')[0];
+                popup_f4e55f23a0e34a89a390d5bde6ea0994.setContent(html_a5d57d67a3804ecba11fb30cafe3ad80);
+            
+
+            circle_marker_e7558b4f2e5048b6acd64100709efc47.bindPopup(popup_f4e55f23a0e34a89a390d5bde6ea0994);
+
+            
+        
+    
+            var circle_marker_c7dfd99c7f9b4660a905801b4c04d8ec = L.circleMarker(
+                [41.601911799999996,-70.93991199999998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_f2e6e93eed544b4cb63aa97aade2110d = L.popup({maxWidth: '300'});
+
+            
+                var html_17861239f8324f5c9946ab71bb541f30 = $('<div id="html_17861239f8324f5c9946ab71bb541f30" style="width: 100.0%; height: 100.0%;">Store Number: 20509<br/>Store Address: 696 DARTMOUTH ST, SOUTH DARTMOUTH<br/>Cash Cube: $0</div>')[0];
+                popup_f2e6e93eed544b4cb63aa97aade2110d.setContent(html_17861239f8324f5c9946ab71bb541f30);
+            
+
+            circle_marker_c7dfd99c7f9b4660a905801b4c04d8ec.bindPopup(popup_f2e6e93eed544b4cb63aa97aade2110d);
+
+            
+        
+    
+            var circle_marker_1d1ec66590354019a53cc2c50f6b09a2 = L.circleMarker(
+                [41.8247116,-71.34337590000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_b334436752524f86aab84d005f9b2bac = L.popup({maxWidth: '300'});
+
+            
+                var html_debd801f75dc440dbc03e92fa922386e = $('<div id="html_debd801f75dc440dbc03e92fa922386e" style="width: 100.0%; height: 100.0%;">Store Number: 20530<br/>Store Address: 96 TAUNTON AVE, SEEKONK<br/>Cash Cube: $0</div>')[0];
+                popup_b334436752524f86aab84d005f9b2bac.setContent(html_debd801f75dc440dbc03e92fa922386e);
+            
+
+            circle_marker_1d1ec66590354019a53cc2c50f6b09a2.bindPopup(popup_b334436752524f86aab84d005f9b2bac);
+
+            
+        
+    
+            var circle_marker_9baa6c5b5ec046d7a9a726302129fecd = L.circleMarker(
+                [41.9697606,-71.335025],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_9c71441f83cb4678b04c7d39bf6da969);
+            
+    
+            var popup_a3aa25a339ce40b383603287d6093ccd = L.popup({maxWidth: '300'});
+
+            
+                var html_b58af8f4c6b849729a509f777d0e3cb9 = $('<div id="html_b58af8f4c6b849729a509f777d0e3cb9" style="width: 100.0%; height: 100.0%;">Store Number: 20701<br/>Store Address: 110 E WASHINGTON ST, NORTH ATTLEBORO<br/>Cash Cube: $0</div>')[0];
+                popup_a3aa25a339ce40b383603287d6093ccd.setContent(html_b58af8f4c6b849729a509f777d0e3cb9);
+            
+
+            circle_marker_9baa6c5b5ec046d7a9a726302129fecd.bindPopup(popup_a3aa25a339ce40b383603287d6093ccd);
+
+            
         
-            var html_ba1f82f712344dafacfe4ec16b570115 = $(`<div id="html_ba1f82f712344dafacfe4ec16b570115" style="width: 100.0%; height: 100.0%;">Store Number: 20701<br/>Store Address: 110 E WASHINGTON ST, NORTH ATTLEBORO<br/>Cash Cube: $0</div>`)[0];
-            popup_b4a8285736af40eb876558026d8a8a15.setContent(html_ba1f82f712344dafacfe4ec16b570115);
-        
-
-        circle_marker_baeec2d5e3ca4e0b84333ce216e7c730.bindPopup(popup_b4a8285736af40eb876558026d8a8a15)
-        ;
-
-        
-    
 </script>
